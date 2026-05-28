@@ -1118,8 +1118,161 @@ export default function Home() {
     </div>
   </div>
 </section>
+{/* Blog Section - Latest Articles */}
+<section id="blog" className="py-[6rem] md:py-[10rem] px-[clamp(1.5rem,5vw,5rem)] relative z-10 bg-white/80 backdrop-blur-sm">
+  <div className="max-w-[90rem] mx-auto">
+    {/* Section Header */}
+    <div className="text-center mb-16 md:mb-20 reveal-up">
+      <div className="inline-flex items-center gap-3 border border-slate-900/10 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full mb-6">
+        <div className="w-2 h-2 bg-[#E8573A] rounded-full animate-pulse" />
+        <span className="font-mono text-xs font-light text-slate-900 uppercase tracking-widest">
+          Latest Articles
+        </span>
+      </div>
+      <h2 className="font-display font-normal text-[clamp(2.5rem,5vw,4.5rem)] tracking-tighter leading-[1.1] mb-4 text-slate-900">
+        Insights From the
+        <br />
+        <span className="text-[#E8573A]">Flight Deck.</span>
+      </h2>
+      <p className="text-[clamp(1rem,1.5vw,1.125rem)] font-light text-slate-500 max-w-[60ch] mx-auto leading-[1.6]">
+        Expert advice, industry news, and pilot stories to keep you informed
+        and inspired on your aviation journey.
+      </p>
+    </div>
+
+    {/* Blog Cards Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-up">
+      {/* Blog Post 1 */}
+      <a href="/blog/how-creative-agencies-shape-the-future" className="group block">
+        <div className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl overflow-hidden transition-all duration-500 hover:border-[#E8573A]/50 hover:bg-white/70 hover:shadow-2xl hover:-translate-y-2">
+          {/* Image */}
+          <div className="relative h-56 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop" 
+              alt="How Creative Agencies Shape the Future of Brands"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute top-4 left-4 bg-[#E8573A]/90 backdrop-blur-sm px-3 py-1 rounded-full">
+              <span className="text-white text-xs font-mono tracking-wider">AVIATION</span>
+            </div>
+          </div>
+          
+          {/* Content */}
+          <div className="p-6 md:p-8">
+            <div className="flex items-center gap-3 text-xs text-slate-500 font-mono mb-3">
+              <span>March 15, 2024</span>
+              <span>•</span>
+              <span>5 min read</span>
+            </div>
+            <h3 className="text-xl md:text-2xl font-display font-normal text-slate-900 mb-3 tracking-tight group-hover:text-[#E8573A] transition-colors duration-300">
+              How Modern Flight Training Shapes the Future of Aviation
+            </h3>
+            <p className="text-slate-600 font-light leading-relaxed mb-4">
+              From advanced simulators to AI-powered instruction, discover how 
+              today's flight schools are building the next generation of pilots.
+            </p>
+            <div className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300">
+              READ MORE
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      {/* Blog Post 2 */}
+      <a href="/blog/the-real-roi-of-smart-design" className="group block">
+        <div className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl overflow-hidden transition-all duration-500 hover:border-[#E8573A]/50 hover:bg-white/70 hover:shadow-2xl hover:-translate-y-2">
+          <div className="relative h-56 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=800&auto=format&fit=crop" 
+              alt="The Real ROI of Smart Design"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute top-4 left-4 bg-[#E8573A]/90 backdrop-blur-sm px-3 py-1 rounded-full">
+              <span className="text-white text-xs font-mono tracking-wider">CAREER</span>
+            </div>
+          </div>
+          
+          <div className="p-6 md:p-8">
+            <div className="flex items-center gap-3 text-xs text-slate-500 font-mono mb-3">
+              <span>March 10, 2024</span>
+              <span>•</span>
+              <span>4 min read</span>
+            </div>
+            <h3 className="text-xl md:text-2xl font-display font-normal text-slate-900 mb-3 tracking-tight group-hover:text-[#E8573A] transition-colors duration-300">
+              The Real ROI of Professional Flight Training
+            </h3>
+            <p className="text-slate-600 font-light leading-relaxed mb-4">
+              Is flight school worth the investment? We break down the numbers, 
+              career opportunities, and long-term earning potential for pilots.
+            </p>
+            <div className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300">
+              READ MORE
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      {/* Blog Post 3 */}
+      <a href="/blog/how-purpose-driven-creativity-builds-brand-power" className="group block">
+        <div className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl overflow-hidden transition-all duration-500 hover:border-[#E8573A]/50 hover:bg-white/70 hover:shadow-2xl hover:-translate-y-2">
+          <div className="relative h-56 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=800&auto=format&fit=crop" 
+              alt="How Purpose-Driven Creativity Builds Brand Power"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute top-4 left-4 bg-[#E8573A]/90 backdrop-blur-sm px-3 py-1 rounded-full">
+              <span className="text-white text-xs font-mono tracking-wider">TECHNOLOGY</span>
+            </div>
+          </div>
+          
+          <div className="p-6 md:p-8">
+            <div className="flex items-center gap-3 text-xs text-slate-500 font-mono mb-3">
+              <span>March 5, 2024</span>
+              <span>•</span>
+              <span>6 min read</span>
+            </div>
+            <h3 className="text-xl md:text-2xl font-display font-normal text-slate-900 mb-3 tracking-tight group-hover:text-[#E8573A] transition-colors duration-300">
+              How Purpose-Driven Training Builds Better Pilots
+            </h3>
+            <p className="text-slate-600 font-light leading-relaxed mb-4">
+              Beyond stick and rudder skills: How modern flight training develops 
+              decision-making, leadership, and professional excellence.
+            </p>
+            <div className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300">
+              READ MORE
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    {/* View All Articles Link */}
+    <div className="text-center mt-12 reveal-up" style={{ transitionDelay: '0.2s' }}>
+      <a href="/blog" className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors">
+        <span className="w-8 h-px bg-slate-300 group-hover:w-12 group-hover:bg-[#E8573A] transition-all duration-300" />
+        VIEW ALL ARTICLES
+        <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
         {/* Final CTA - Now with semi-transparent background */}
-        <div className="relative z-20 px-[clamp(1.5rem,5vw,5rem)] py-[4rem] md:py-[8rem] bg-white/50 backdrop-blur-sm">
+        {/* <div className="relative z-20 px-[clamp(1.5rem,5vw,5rem)] py-[4rem] md:py-[8rem] bg-white/50 backdrop-blur-sm">
           <section className="cta-section relative w-full max-w-[90rem] mx-auto min-h-[60vh] py-20 flex flex-col items-center justify-center overflow-hidden text-center bg-[#06080c] rounded-3xl shadow-[0_20px_40px_-20px_rgba(0,0,0,0.1)]">
             <video autoPlay muted loop playsInline className="cta-bg-photo absolute inset-0 z-0 w-full h-[130%] -top-[15%] object-cover" style={{ filter: 'brightness(0.8) contrast(1.1) saturate(1.15)' }}>
               <source src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/user-files/ee77abb2-b67d-4ed9-bbf1-155a06f3baad/642c4e57-36d4-4a67-b403-0d13c769b912-1460279_Cockpit_View_1280x720-1-1-.mp4?v=1777486220669" type="video/mp4" />
@@ -1154,7 +1307,111 @@ export default function Home() {
               </div>
             </div>
           </section>
+        </div> */}
+        {/* Final CTA - With Left-Aligned Content & Gradient Overlay */}
+<div className="relative z-20 px-[clamp(1.5rem,5vw,5rem)] py-[4rem] md:py-[8rem] bg-white/50 backdrop-blur-sm">
+  <section className="cta-section relative w-full max-w-[90rem] mx-auto min-h-[55vh] flex flex-col md:flex-row items-center justify-between overflow-hidden rounded-3xl shadow-2xl">
+    
+    {/* Background Image */}
+    <div 
+      className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat rounded-3xl"
+      style={{ backgroundImage: "url('/bg.png')" }}
+    />
+    
+    {/* Gradient Overlay - Dark on left, transparent on right */}
+    <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/85 via-black/60 to-black/20 rounded-3xl" />
+    
+    {/* Accent gradient from brand color */}
+    <div className="absolute inset-0 z-10 bg-gradient-to-br from-[#E8573A]/5 via-transparent to-transparent rounded-3xl" />
+
+    {/* Content - Left Aligned */}
+    <div className="relative z-30 w-full max-w-[55rem] px-8 md:px-12 lg:px-16 py-16 md:py-20">
+      
+      {/* Animated Badge */}
+      <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-6 animate-pulse">
+        <div className="w-2 h-2 bg-[#E8573A] rounded-full animate-pulse" />
+        <span className="font-mono text-xs font-light text-white uppercase tracking-widest">
+          Limited Availability • Apply Now
+        </span>
+      </div>
+
+      {/* Main Heading with Split Text Effect */}
+      <h2 className="font-display font-normal text-[clamp(2.5rem,5vw,5.5rem)] tracking-tight text-white leading-[1.05] mb-6">
+        Ready for
+        <span className="relative inline-block ml-2 md:ml-4">
+          <span className="text-[#E8573A]">Takeoff?</span>
+          <svg className="absolute -bottom-2 left-0 w-full h-[3px] text-[#E8573A]" viewBox="0 0 200 4" fill="currentColor">
+            <path d="M0,2 L200,2" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" />
+          </svg>
+        </span>
+      </h2>
+
+      {/* Description with better readability */}
+      <p className="font-sans text-[clamp(1rem,1.25vw,1.125rem)] font-light text-white/90 max-w-[45ch] mb-8 md:mb-10 leading-relaxed">
+        Book a campus tour or schedule a discovery flight. Our admissions
+        team responds within 24 hours. Zero obligations.
+      </p>
+
+      {/* CTA Buttons with hover effects */}
+      <div className="flex flex-col sm:flex-row items-start gap-5">
+        <a 
+          href="#admissions" 
+          className="group relative inline-flex items-center justify-center px-8 py-4 bg-[#E8573A] text-white text-sm font-medium tracking-widest uppercase rounded-full transition-all duration-300 hover:-translate-y-[2px] hover:bg-[#F06B4E] hover:shadow-[0_0_30px_rgba(232,87,58,0.4)] overflow-hidden"
+        >
+          <span className="relative z-10 flex items-center">
+            BOOK A DISCOVERY FLIGHT
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2 transition-transform group-hover:translate-x-1">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </span>
+          {/* Shine effect on hover */}
+          <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+        </a>
+        
+        <a 
+          href="tel:8582794359" 
+          className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-light transition-colors group"
+        >
+          <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-[#E8573A]/20 transition-colors">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <span className="group-hover:underline">or call (858) 279-4359</span>
+        </a>
+      </div>
+
+      {/* Trust Badges */}
+      <div className="flex items-center gap-6 mt-8 pt-4 border-t border-white/10">
+        <div className="flex items-center gap-2">
+          <svg className="w-4 h-4 text-[#E8573A]" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>
+          <span className="text-white/60 text-xs font-mono">4.9/5 Rating</span>
         </div>
+        <div className="w-px h-4 bg-white/20" />
+        <div className="flex items-center gap-2">
+          <svg className="w-4 h-4 text-[#E8573A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span className="text-white/60 text-xs font-mono">24hr Response</span>
+        </div>
+        <div className="w-px h-4 bg-white/20" />
+        <div className="flex items-center gap-2">
+          <svg className="w-4 h-4 text-[#E8573A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          <span className="text-white/60 text-xs font-mono">Zero Obligations</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Empty spacer for right side - maintains left alignment */}
+    <div className="hidden lg:block flex-1" />
+    
+  </section>
+</div>
 
         {/* Footer - With semi-transparent background */}
         <footer className="bg-white/80 backdrop-blur-sm border-t border-slate-200 relative pb-8 pt-16 md:pt-20 z-30">
