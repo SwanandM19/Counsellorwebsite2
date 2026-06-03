@@ -1,7 +1,7 @@
-
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import LeadPopup from '@/components/LeadPopup'
 
 export default function Home() {
   // State for countdown
@@ -159,6 +159,7 @@ export default function Home() {
 
   return (
     <div className="scroll-smooth bg-white text-slate-900 selection:bg-[#E8573A] selection:text-white relative">
+      <LeadPopup />
       {/* Noise Overlay - Fixed */}
       <div className="fixed inset-0 pointer-events-none z-[9999] opacity-[0.03] mix-blend-multiply bg-noise" />
 
@@ -190,7 +191,7 @@ export default function Home() {
               <a href="#" className="flex items-center gap-3 group/logo">
                 <img
                   src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/7779c4e9-cf43-4379-a162-96455d9c5618_320w.png"
-                  alt="Coast Flight Training"
+                  alt="Serenity Counselling"
                   className="md:h-8 transition-transform duration-500 group-hover/logo:scale-105 w-auto h-7 object-contain"
                 />
               </a>
@@ -198,20 +199,20 @@ export default function Home() {
 
             <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 hidden md:flex items-center gap-1 px-4 border-x border-slate-900/10 h-[60%]">
               <a href="#architecture" className="text-xs font-mono font-light text-slate-500 hover:text-slate-900 hover:bg-slate-900/5 px-4 py-2 rounded-full transition-all duration-300">
-                Pathways
+                Services
               </a>
-              <a href="#fleet" className="text-xs font-mono font-light text-slate-500 hover:text-slate-900 hover:bg-slate-900/5 px-4 py-2 rounded-full transition-all duration-300">
-                Fleet
+              <a href="#about" className="text-xs font-mono font-light text-slate-500 hover:text-slate-900 hover:bg-slate-900/5 px-4 py-2 rounded-full transition-all duration-300">
+                About
               </a>
               <a href="#admissions" className="text-xs font-mono font-light text-slate-500 hover:text-slate-900 hover:bg-slate-900/5 px-4 py-2 rounded-full transition-all duration-300">
-                Admissions
+                Booking
               </a>
             </div>
 
             <div className="flex-none pr-1 z-10">
               <a href="#contact" className="codepen-button hidden md:inline-block">
                 <span className="px-5 py-2 text-xs font-mono tracking-wider flex items-center gap-2">
-                  BOOK FLIGHT
+                  BOOK SESSION
                   {/* @ts-expect-error - web component */}
                   <iconify-icon icon="solar:arrow-right-up-linear" className="w-4 h-4" />
                 </span>
@@ -231,41 +232,41 @@ export default function Home() {
               <div className="inline-flex items-center gap-3 border border-slate-900/10 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full mb-8 reveal-up shadow-sm is-visible" style={{ transitionDelay: '1.1s' }}>
                 <div className="w-2 h-2 bg-[#E8573A] rounded-full animate-pulse shadow-[0_0_10px_rgba(232,87,58,0.20)]" />
                 <span className="font-mono text-xs font-light text-slate-900 uppercase tracking-widest">
-                  Professional Flight School
+                  Licensed & Certified Counsellor
                 </span>
               </div>
 
               <h1 className="font-display font-normal text-[clamp(2.5rem,8vw,9rem)] leading-[0.85] tracking-tighter text-slate-900 mb-8 reveal-up text-balance flex flex-col items-center w-full is-visible" style={{ transitionDelay: '1.2s' }}>
-                <span className="sr-only">Professional Flight School</span>
-                <span>THE SKY IS NO</span>
+                <span className="sr-only">Professional Counselling Services</span>
+                <span>HEALING BEGINS</span>
                 <span className="flex items-center justify-center gap-3 md:gap-4 flex-wrap w-full">
-                  LONGER THE
+                  WITH A SINGLE
                   <span className="hidden sm:inline-flex h-[clamp(2.5rem,5vw,6rem)] w-[clamp(6rem,12vw,14rem)] bg-white border rounded-full items-center justify-center overflow-hidden relative group backdrop-blur-sm shadow-sm border-white">
-                    <span className="bg-center group-hover:scale-110 transition-transform duration-1000 opacity-60 bg-[url(https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?w=320&q=80)] bg-cover absolute inset-0" />
+                    <span className="bg-center group-hover:scale-110 transition-transform duration-1000 opacity-60 bg-[url(https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=320&q=80)] bg-cover absolute inset-0" />
                     <span className="z-[5] border-stone-50 absolute inset-0" />
                     <span className="text-xs text-neutral-50 tracking-widest font-mono z-10 relative">
-                      LIMIT.
+                      STEP.
                     </span>
                   </span>
                 </span>
-                <span>IT'S YOUR OFFICE.</span>
+                <span>YOU ARE NOT ALONE.</span>
               </h1>
 
               <p className="font-sans text-[clamp(1.125rem,1.5vw,1.5rem)] font-light text-slate-600 max-w-[50ch] leading-[1.6] mb-12 reveal-up text-balance is-visible" style={{ transitionDelay: '1.3s' }}>
-                Elite Airline Pilot Training in San Diego, Dallas, and San Marcos.
+                Compassionate, Confidential Counselling for Individuals, Couples & Families.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full sm:w-auto reveal-up is-visible" style={{ transitionDelay: '1.4s' }}>
                 <a href="#admissions" className="codepen-button w-full sm:w-auto">
                   <span className="px-8 py-4 text-sm font-mono tracking-widest flex items-center gap-2">
-                    BOOK A DISCOVERY FLIGHT
+                    BOOK A FREE CONSULTATION
                     {/* @ts-expect-error - web component */}
-                    <iconify-icon icon="solar:paperplane-linear" className="w-5 h-5" />
+                    <iconify-icon icon="solar:heart-linear" className="w-5 h-5" />
                   </span>
                 </a>
                 <a href="#architecture" className="group flex items-center justify-center gap-3 h-14 px-6 text-xs text-slate-500 hover:text-slate-900 font-mono font-light tracking-widest transition-colors w-full sm:w-auto">
                   <div className="w-8 h-[1px] bg-slate-300 group-hover:w-12 group-hover:bg-slate-900 transition-all duration-300" />
-                  EXPLORE PATHWAYS
+                  EXPLORE SERVICES
                 </a>
               </div>
             </div>
@@ -285,10 +286,10 @@ export default function Home() {
         <section className="border-y border-slate-200 relative z-20 bg-white/80 backdrop-blur-sm">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-slate-200 w-full">
             {[
-              { label: 'PILOTS TRAINED', target: 34, suffix: '', description: 'Career and recreational graduates across three campuses.' },
-              { label: 'PLACEMENT RATE', target: 99, suffix: '.9%', description: 'Academy graduates placed with airline partners.' },
-              { label: 'AIRCRAFT FLEET', target: 15, suffix: 'Y', description: 'Cirrus, Piper, Cessna — all G1000 equipped.' },
-              { label: 'JOB OFFERS', target: 4, suffix: '.2B', prefix: '$', description: 'More conditional offers than any peer school nationally.' }
+            { label: 'CLIENTS HELPED', target: 850, suffix: '+', description: 'Individuals, couples and families supported on their healing journey.' },
+              { label: 'SUCCESS RATE', target: 94, suffix: '%', description: 'Clients report significant improvement after completing their program.' },
+              { label: 'YEARS EXPERIENCE', target: 12, suffix: '+', description: 'Specialised experience across anxiety, trauma, relationships & more.' },
+              { label: 'SESSIONS DELIVERED', target: 5, suffix: 'K+', description: 'Over five thousand hours of one-on-one and group counselling sessions.' }
             ].map((metric, idx) => (
               <div key={idx} className="p-10 lg:p-14 flex flex-col justify-between aspect-square group bg-white/50 hover:bg-[#E8573A] transition-colors duration-500 cursor-default relative overflow-hidden">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center opacity-0 group-hover:opacity-10 transition-opacity duration-700 mix-blend-multiply grayscale" />
@@ -297,7 +298,6 @@ export default function Home() {
                 </span>
                 <div className="relative z-10 transform group-hover:-translate-y-4 transition-transform duration-500">
                   <div className="text-[clamp(3.5rem,6vw,5.5rem)] leading-none group-hover:text-white transition-colors font-normal text-slate-900 tracking-tighter font-display mb-2">
-                    {metric.prefix && <span className="text-[clamp(1.75rem,3vw,3rem)] align-top">{metric.prefix}</span>}
                     <span className="count-up" data-target={metric.target}>0</span>
                     {metric.suffix}
                   </div>
@@ -316,16 +316,16 @@ export default function Home() {
             <div className="mb-12 md:mb-20 reveal-up is-visible">
               <span className="font-mono text-xs font-light text-[#E8573A] tracking-[0.2em] uppercase flex items-center gap-3 mb-6">
                 <span className="w-2 h-2 bg-[#E8573A]" />
-                Training Pathways
+                Counselling Services
               </span>
               <h2 className="font-display font-normal text-[clamp(2.5rem,5vw,4.5rem)] tracking-tighter leading-none mb-6 text-slate-900">
-                Your Journey.
+                Your Path to
                 <br />
-                <span className="text-slate-400">Our Expertise.</span>
+                <span className="text-slate-400">Wellness & Healing.</span>
               </h2>
               <p className="text-[clamp(1.125rem,1.5vw,1.25rem)] font-light text-slate-500 max-w-[45ch] leading-[1.6]">
-                From zero experience to airline-ready. Our structured programs are
-                designed to turn ambition into a professional aviation career.
+                From personal struggles to relationship challenges. Our tailored
+                programmes are designed to support your mental health and emotional wellbeing.
               </p>
             </div>
 
@@ -335,7 +335,7 @@ export default function Home() {
               <div className="md:col-span-8 md:row-span-2 bg-white border border-slate-200 relative overflow-hidden transition-all duration-700 group hover:border-slate-300 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.05)] flex flex-col justify-between reveal-up min-h-[24rem] bento-card hover:scale-[1.01] hover:z-20 rounded-xl is-visible">
                 <div className="absolute inset-0 z-0 overflow-hidden rounded-xl">
                   <div className="absolute bottom-0 left-0 right-0 h-[65%] bg-gradient-to-t from-white via-white/70 to-transparent z-10 pointer-events-none" />
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0ae91804-ad20-4064-a787-425d5dc07a7b_1600w.jpg" alt="Airline Career" className="w-full h-full object-cover saturate-[1.1] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05]" />
+                  <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1600&auto=format&fit=crop" alt="Individual Counselling" className="w-full h-full object-cover saturate-[1.1] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05]" />
                 </div>
                 <div className="z-10 relative h-full flex flex-col justify-between p-8 md:p-12 pointer-events-none">
                   <div className="flex justify-between items-start mb-12 md:mb-0">
@@ -347,15 +347,15 @@ export default function Home() {
                   </div>
                   <div className="max-w-[32rem] pointer-events-auto">
                     <h3 className="font-display font-normal text-[clamp(2rem,3vw,3rem)] text-slate-900 mb-4 leading-none tracking-tight drop-shadow-sm group-hover:drop-shadow-none">
-                      Airline Career
+                      Individual Therapy
                     </h3>
                     <p className="text-base font-light text-slate-600 leading-[1.6] mb-8 group-hover:text-slate-800 transition-colors">
-                      Our premier structured training program designed to take you
-                      from zero hours to a guaranteed flight instructor role, and
-                      onward to the airlines.
+                      One-on-one sessions tailored to your unique needs — helping you
+                      work through anxiety, depression, trauma, grief, and life transitions
+                      in a safe and confidential space.
                     </p>
                     <a href="#" className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors">
-                      VIEW CURRICULUM
+                      LEARN MORE
                       {/* @ts-expect-error - web component */}
                       <iconify-icon icon="solar:arrow-right-linear" className="w-4 h-4" />
                     </a>
@@ -366,7 +366,7 @@ export default function Home() {
               <div className="md:col-span-4 md:row-span-2 bg-white border border-slate-200 relative overflow-hidden transition-all duration-700 group hover:border-slate-300 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.05)] flex flex-col justify-between reveal-up min-h-[24rem] bento-card hover:scale-[1.01] hover:z-20 rounded-xl is-visible" style={{ transitionDelay: '0.1s' }}>
                 <div className="absolute inset-0 z-0 overflow-hidden rounded-xl">
                   <div className="absolute bottom-0 left-0 right-0 h-[65%] bg-gradient-to-t from-white via-white/70 to-transparent z-10 pointer-events-none" />
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6adba3db-5f1c-4818-920e-2ba54a1e81b1_1600w.jpg" alt="Military Transition" className="w-full h-full object-cover contrast-[1.08] saturate-[1.05] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05]" />
+                  <img src="https://images.unsplash.com/photo-1516401266446-6432a8a07d41?q=80&w=1600&auto=format&fit=crop" alt="Couples Counselling" className="w-full h-full object-cover contrast-[1.08] saturate-[1.05] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05]" />
                 </div>
                 <div className="z-10 relative h-full flex flex-col justify-between p-8 md:p-12 pointer-events-none">
                   <div className="flex justify-between items-start mb-8 md:mb-12">
@@ -376,13 +376,13 @@ export default function Home() {
                   </div>
                   <div className="pointer-events-auto">
                     <h3 className="font-display font-normal text-[clamp(1.5rem,2.5vw,2rem)] text-slate-900 mb-3 tracking-tight">
-                      Military Transition
+                      Couples Counselling
                     </h3>
                     <p className="text-base font-light text-slate-600 leading-relaxed mb-6 group-hover:text-slate-800 transition-colors">
-                      Rotor transition and skillbridge programs tailored for veterans.
+                      Rebuild connection, communication, and trust with your partner.
                     </p>
                     <a href="#" className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors">
-                      VIEW CURRICULUM
+                      LEARN MORE
                       {/* @ts-expect-error - web component */}
                       <iconify-icon icon="solar:arrow-right-linear" className="w-4 h-4" />
                     </a>
@@ -394,21 +394,21 @@ export default function Home() {
               <div className="md:col-span-12 bg-white border border-slate-200 relative overflow-hidden transition-all duration-700 group hover:border-slate-300 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.05)] flex flex-col md:flex-row reveal-up bento-card hover:scale-[1.01] hover:z-20 rounded-xl is-visible" style={{ transitionDelay: '0.2s' }}>
                 <div className="absolute inset-0 z-0 overflow-hidden rounded-xl">
                   <div className="absolute inset-0 bg-gradient-to-t from-white via-white/70 to-transparent md:bg-gradient-to-r md:from-white md:via-white/70 md:to-transparent z-10 pointer-events-none" />
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/52cb41cc-89b1-4d2b-8d88-f41e229a3b68_1600w.jpg" alt="Private Pilot" className="contrast-[1.05] saturate-[1.05] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05] w-full h-full object-cover" />
+                  <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1600&auto=format&fit=crop" alt="Family Therapy" className="contrast-[1.05] saturate-[1.05] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05] w-full h-full object-cover" />
                 </div>
                 <div className="p-8 md:p-12 flex-1 flex flex-col justify-center z-10 relative w-full pointer-events-none">
                   <div className="font-mono text-xs font-light bg-white/80 border border-slate-200 px-3 py-1 rounded-full text-slate-600 self-start mb-6 backdrop-blur-md">
                     PROGRAM_03
                   </div>
                   <h3 className="font-display font-normal text-[clamp(1.75rem,2.5vw,2.25rem)] text-slate-900 mb-4 tracking-tight">
-                    Private Pilot
+                    Family Therapy
                   </h3>
                   <p className="text-base font-light text-slate-600 leading-[1.6] max-w-[40ch] mb-6 group-hover:text-slate-800 transition-colors">
-                    Fly for business or pleasure. The ultimate freedom begins here
-                    with our world-class modern fleet.
+                    Strengthen family bonds and resolve conflict in a supportive,
+                    structured environment guided by an experienced therapist.
                   </p>
                   <a href="#" className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors pointer-events-auto">
-                    VIEW CURRICULUM
+                    LEARN MORE
                     {/* @ts-expect-error - web component */}
                     <iconify-icon icon="solar:arrow-right-linear" className="w-4 h-4" />
                   </a>
@@ -425,17 +425,17 @@ export default function Home() {
               <div className="inline-flex items-center gap-3 border border-slate-900/10 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full mb-6">
                 <div className="w-2 h-2 bg-[#E8573A] rounded-full animate-pulse" />
                 <span className="font-mono text-xs font-light text-slate-900 uppercase tracking-widest">
-                  Your Journey
+                  How It Works
                 </span>
               </div>
               <h2 className="font-display font-normal text-[clamp(2.5rem,5vw,4.5rem)] tracking-tighter leading-[1.1] mb-4 text-slate-900">
-                From Cockpit to Career.
+                Your Healing Journey.
                 <br />
                 <span className="text-[#E8573A]">Three Simple Steps.</span>
               </h2>
               <p className="text-[clamp(1rem,1.5vw,1.125rem)] font-light text-slate-500 max-w-[60ch] mx-auto leading-[1.6]">
-                Your path to becoming a professional pilot starts here. We've simplified
-                the journey so you can focus on what matters most — flying.
+                Starting therapy can feel daunting, but we've made the process simple
+                and welcoming — so you can focus on what matters most: your wellbeing.
               </p>
             </div>
 
@@ -474,11 +474,11 @@ export default function Home() {
                     <h3 className="text-2xl md:text-3xl font-display font-normal text-slate-900 mb-3 tracking-tight">
                       Book Your
                       <br />
-                      Discovery Flight
+                      Free Consultation
                     </h3>
 
                     <p className="text-slate-600 font-light leading-relaxed mb-6">
-                      Schedule your introductory flight experience. Meet our instructors, tour our facility, and get hands-on experience in the cockpit.
+                      Schedule a no-obligation introductory call. Meet your counsellor, share what's on your mind, and see if we're the right fit for you.
                     </p>
 
                     <div className="flex items-center gap-2 text-xs font-mono text-[#E8573A]">
@@ -491,9 +491,9 @@ export default function Home() {
 
                   {/* Feature Tags */}
                   <div className="flex flex-wrap gap-2 mt-4 px-2">
-                    <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">No experience needed</span>
+                    <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">Completely confidential</span>
                     <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">•</span>
-                    <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">All ages welcome</span>
+                    <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">No pressure</span>
                   </div>
                 </div>
 
@@ -516,11 +516,11 @@ export default function Home() {
                     <h3 className="text-2xl md:text-3xl font-display font-normal text-slate-900 mb-3 tracking-tight">
                       Choose Your
                       <br />
-                      Training Path
+                      Therapy Plan
                     </h3>
 
                     <p className="text-slate-600 font-light leading-relaxed mb-6">
-                      Select from our structured programs — Private Pilot, Commercial, or Airline Career. Each path is tailored to your goals.
+                      Select from individual, couples, or family counselling. Each plan is personalised to your goals, schedule, and needs.
                     </p>
 
                     <div className="flex items-center gap-2 text-xs font-mono text-[#E8573A]">
@@ -534,7 +534,7 @@ export default function Home() {
                   <div className="flex flex-wrap gap-2 mt-4 px-2">
                     <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">Flexible scheduling</span>
                     <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">•</span>
-                    <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">Financing available</span>
+                    <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">In-person & online</span>
                   </div>
                 </div>
 
@@ -555,13 +555,13 @@ export default function Home() {
                     </div>
 
                     <h3 className="text-2xl md:text-3xl font-display font-normal text-slate-900 mb-3 tracking-tight">
-                      Earn Your
+                      Begin Your
                       <br />
-                      Wings & Takeoff
+                      Healing Journey
                     </h3>
 
                     <p className="text-slate-600 font-light leading-relaxed mb-6">
-                      Complete your training, earn certifications, and launch your aviation career with our airline placement program.
+                      Attend regular sessions, build coping strategies, and experience genuine, lasting change with your dedicated counsellor.
                     </p>
 
                     <div className="flex items-center gap-2 text-xs font-mono text-[#E8573A]">
@@ -573,9 +573,9 @@ export default function Home() {
                   </div>
 
                   <div className="flex flex-wrap gap-2 mt-4 px-2">
-                    <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">Job placement assistance</span>
+                    <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">Ongoing support</span>
                     <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">•</span>
-                    <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">Lifetime support</span>
+                    <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">Proven methods</span>
                   </div>
                 </div>
               </div>
@@ -585,7 +585,7 @@ export default function Home() {
             <div className="text-center mt-12 reveal-up" style={{ transitionDelay: '0.4s' }}>
               <a href="#admissions" className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors">
                 <span className="w-8 h-px bg-slate-300 group-hover:w-12 group-hover:bg-[#E8573A] transition-all duration-300" />
-                START YOUR JOURNEY TODAY
+                START YOUR HEALING TODAY
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -601,17 +601,17 @@ export default function Home() {
               <div className="inline-flex items-center gap-3 border border-slate-900/10 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full mb-6">
                 <div className="w-2 h-2 bg-[#E8573A] rounded-full animate-pulse" />
                 <span className="font-mono text-xs font-light text-slate-900 uppercase tracking-widest">
-                  Meet Your Instructor
+                  Meet Your Counsellor
                 </span>
               </div>
               <h2 className="font-display font-normal text-[clamp(2.5rem,5vw,4.5rem)] tracking-tighter leading-[1.1] mb-4 text-slate-900">
-                Experience You Can
+                Compassion You Can
                 <br />
-                <span className="text-[#E8573A]">Trust Behind the Controls.</span>
+                <span className="text-[#E8573A]">Trust With Your Story.</span>
               </h2>
               <p className="text-[clamp(1rem,1.5vw,1.125rem)] font-light text-slate-500 max-w-[60ch] mx-auto leading-[1.6]">
-                Learn from industry veterans who've logged thousands of hours and are
-                passionate about shaping the next generation of pilots.
+                Work with a licensed therapist who genuinely cares about your progress
+                and is dedicated to helping you live a healthier, more fulfilling life.
               </p>
             </div>
 
@@ -643,8 +643,8 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-br from-[#E8573A]/20 to-transparent rounded-2xl blur-2xl group-hover:blur-3xl transition-all duration-700" />
                   <div className="relative rounded-2xl overflow-hidden border border-white/50 bg-white/30 backdrop-blur-sm shadow-xl">
                     <img
-                      src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop"
-                      alt="Captain James Wilson - Lead Flight Instructor"
+                      src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?q=80&w=800&auto=format&fit=crop"
+                      alt="Dr. Sarah Mitchell - Lead Counsellor"
                       className="w-full h-full object-cover aspect-[4/5] grayscale-[0.2] hover:grayscale-0 transition-all duration-700 scale-100 hover:scale-105"
                     />
                     {/* Overlay gradient */}
@@ -655,7 +655,7 @@ export default function Home() {
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-[#E8573A] rounded-full animate-pulse" />
                         <span className="text-xs font-mono font-light text-slate-900 tracking-wider">
-                          ATP CERTIFIED • 15,000+ HOURS
+                          LICENSED THERAPIST • 12+ YEARS
                         </span>
                       </div>
                     </div>
@@ -667,12 +667,12 @@ export default function Home() {
                   {/* Name & Title */}
                   <div className="reveal-up">
                     <h3 className="text-4xl md:text-5xl font-display font-normal text-slate-900 mb-3 tracking-tight">
-                      Captain James Wilson
+                      Dr. Sarah Mitchell
                     </h3>
                     <div className="inline-flex items-center gap-2 bg-[#E8573A]/10 backdrop-blur-sm px-3 py-1 rounded-full border border-[#E8573A]/20">
                       <span className="w-1.5 h-1.5 bg-[#E8573A] rounded-full" />
                       <span className="text-xs font-mono font-light text-[#E8573A] tracking-wider">
-                        ATP • CFI • CFII • MEI
+                        MSc • BACP Accredited • CBT Specialist
                       </span>
                     </div>
                   </div>
@@ -680,35 +680,35 @@ export default function Home() {
                   {/* Bio Text */}
                   <div className="space-y-4 reveal-up" style={{ transitionDelay: '0.1s' }}>
                     <p className="text-slate-600 font-light leading-relaxed">
-                      Captain James Wilson is a licensed Airline Transport Pilot (ATP) and
-                      Certified Flight Instructor in California, Texas, and Florida. He has
-                      been working in the field of professional aviation training, airline
-                      operations, and flight safety education for the past fifteen years.
+                      Dr. Sarah Mitchell is a fully accredited counsellor and psychotherapist
+                      with a Master's degree in Clinical Psychology. She specialises in
+                      anxiety, depression, trauma recovery, and relationship counselling,
+                      working with individuals, couples, and families.
                     </p>
                     <p className="text-slate-600 font-light leading-relaxed">
-                      His passion is to support aspiring pilots in overcoming the challenges
-                      that hold them back from achieving their aviation dreams. When he's not
-                      in the cockpit or teaching, he enjoys mentoring young aviators,
-                      restoring vintage aircraft, and spending time with his family.
+                      Her approach combines evidence-based therapies including CBT and
+                      mindfulness with a warm, client-centred style. When she's not in
+                      session, Sarah volunteers at local mental health charities and
+                      mentors trainee therapists in the community.
                     </p>
                   </div>
 
                   {/* Credentials Grid */}
                   <div className="grid grid-cols-2 gap-4 pt-4 reveal-up" style={{ transitionDelay: '0.2s' }}>
                     <div className="bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-white/40">
-                      <div className="text-2xl font-display text-[#E8573A] mb-1">15,000+</div>
-                      <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Flight Hours</div>
+                      <div className="text-2xl font-display text-[#E8573A] mb-1">850+</div>
+                      <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Clients Helped</div>
                     </div>
                     <div className="bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-white/40">
-                      <div className="text-2xl font-display text-[#E8573A] mb-1">8,000+</div>
-                      <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Students Trained</div>
+                      <div className="text-2xl font-display text-[#E8573A] mb-1">5,000+</div>
+                      <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Sessions Delivered</div>
                     </div>
                     <div className="bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-white/40">
-                      <div className="text-2xl font-display text-[#E8573A] mb-1">4</div>
-                      <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Type Ratings</div>
+                      <div className="text-2xl font-display text-[#E8573A] mb-1">3</div>
+                      <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Specialisations</div>
                     </div>
                     <div className="bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-white/40">
-                      <div className="text-2xl font-display text-[#E8573A] mb-1">20+</div>
+                      <div className="text-2xl font-display text-[#E8573A] mb-1">12+</div>
                       <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Years Experience</div>
                     </div>
                   </div>
@@ -741,7 +741,7 @@ export default function Home() {
             <div className="text-center mt-12 reveal-up" style={{ transitionDelay: '0.4s' }}>
               <a href="#contact" className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors">
                 <span className="w-8 h-px bg-slate-300 group-hover:w-12 group-hover:bg-[#E8573A] transition-all duration-300" />
-                MEET THE ENTIRE TEAM
+                MEET THE FULL TEAM
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -792,17 +792,17 @@ export default function Home() {
       <div className="inline-flex items-center gap-3 border border-slate-900/10 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full mb-6">
         <div className="w-2 h-2 bg-[#E8573A] rounded-full animate-pulse" />
         <span className="font-mono text-xs font-light text-slate-900 uppercase tracking-widest">
-          Student Success
+          Client Stories
         </span>
       </div>
       <h2 className="font-display font-normal text-[clamp(2.5rem,5vw,4.5rem)] tracking-tighter leading-[1.1] mb-4 text-slate-900">
         Voices of Our
         <br />
-        <span className="text-[#E8573A]">Future Pilots.</span>
+        <span className="text-[#E8573A]">Healing Community.</span>
       </h2>
       <p className="text-[clamp(1rem,1.5vw,1.125rem)] font-light text-slate-500 max-w-[60ch] mx-auto leading-[1.6]">
-        Hear from our graduates who've transformed their dreams into careers
-        soaring above the clouds.
+        Hear from clients who've taken the brave step toward healing
+        and transformed their lives through counselling.
       </p>
     </div>
 
@@ -834,15 +834,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "Coast Flight Training transformed my life. From zero hours to First Officer in just 18 months. The instructors are world-class and truly care about your success."
+                "Coming to therapy was the best decision I've ever made. Dr. Mitchell helped me understand my anxiety and gave me real tools to manage it. I feel like a completely different person."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/2dbcdf02-39a2-4c13-95f7-3118cc995fa0_320w.webp" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/2dbcdf02-39a2-4c13-95f7-3118cc995fa0_320w.webp" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
-                  <div className="text-slate-900 font-medium text-sm">Michael Rodriguez</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">First Officer, United Airlines</div>
+                  <div className="text-slate-900 font-medium text-sm">Priya Sharma</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Individual Therapy Client</div>
                 </div>
               </div>
             </div>
@@ -856,15 +856,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "The G1000-equipped fleet and structured curriculum gave me the confidence I needed. I'm now living my dream as a commercial pilot."
+                "My partner and I were on the verge of separating. The couples sessions helped us rebuild trust and actually communicate again. We're in such a better place now."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/90ec73f0-6fd3-4d0c-922c-fcc592c983df_320w.webp" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/90ec73f0-6fd3-4d0c-922c-fcc592c983df_320w.webp" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
-                  <div className="text-slate-900 font-medium text-sm">Sarah Chen</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">Commercial Pilot, Delta</div>
+                  <div className="text-slate-900 font-medium text-sm">James & Anika Patel</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Couples Therapy Clients</div>
                 </div>
               </div>
             </div>
@@ -878,15 +878,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "The airline placement program is incredible. They connected me with opportunities I never thought possible."
+                "I was sceptical about therapy at first, but the safe and non-judgmental environment made all the difference. I'd recommend it to absolutely anyone."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/83a1ae5f-c842-4ee9-a912-505fc66a1ee0_320w.webp" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/83a1ae5f-c842-4ee9-a912-505fc66a1ee0_320w.webp" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
-                  <div className="text-slate-900 font-medium text-sm">James Wilson</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">First Officer, Southwest</div>
+                  <div className="text-slate-900 font-medium text-sm">Daniel Okafor</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Individual Therapy Client</div>
                 </div>
               </div>
             </div>
@@ -901,15 +901,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "The mentorship and support from day one set me up for success. Best investment in my career."
+                "The support I received was life-changing. I finally have coping tools that actually work for me day-to-day."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/39e15168-9f77-4837-9a4b-89c74b8bc38b_320w.webp" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/39e15168-9f77-4837-9a4b-89c74b8bc38b_320w.webp" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
                   <div className="text-slate-900 font-medium text-sm">Marcus Thompson</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">Captain, Delta</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Family Therapy Client</div>
                 </div>
               </div>
             </div>
@@ -928,15 +928,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "Best decision I ever made. The instructors are patient, knowledgeable, and genuinely invested in your success."
+                "I was struggling with grief after losing my mum. Sarah was so patient and compassionate — she helped me process emotions I didn't even know I was carrying."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c92852bb-a510-405a-85ab-ffa0fde136a4_320w.jpg" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c92852bb-a510-405a-85ab-ffa0fde136a4_320w.jpg" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
-                  <div className="text-slate-900 font-medium text-sm">Emily Thompson</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">CFI, Coast Flight</div>
+                  <div className="text-slate-900 font-medium text-sm">Claire Whitfield</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Individual Therapy Client</div>
                 </div>
               </div>
             </div>
@@ -950,15 +950,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "From private pilot to airline-ready. Their structured approach and modern fleet made all the difference."
+                "I've tried therapy before but this was on a completely different level. The structured approach and genuine care made it incredibly effective for me."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/2dbcdf02-39a2-4c13-95f7-3118cc995fa0_320w.webp" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/2dbcdf02-39a2-4c13-95f7-3118cc995fa0_320w.webp" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
-                  <div className="text-slate-900 font-medium text-sm">David Park</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">First Officer, American Airlines</div>
+                  <div className="text-slate-900 font-medium text-sm">Rahul Verma</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Individual Therapy Client</div>
                 </div>
               </div>
             </div>
@@ -972,15 +972,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "The mentorship I received went beyond flight training. They prepared me for the entire aviation career journey."
+                "Our family went through a really difficult period. Family therapy gave us a space to actually hear each other. The improvement in our home environment has been remarkable."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/90ec73f0-6fd3-4d0c-922c-fcc592c983df_320w.webp" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/90ec73f0-6fd3-4d0c-922c-fcc592c983df_320w.webp" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
-                  <div className="text-slate-900 font-medium text-sm">Jessica Martinez</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">Corporate Pilot</div>
+                  <div className="text-slate-900 font-medium text-sm">The Nakamura Family</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Family Therapy Clients</div>
                 </div>
               </div>
             </div>
@@ -995,15 +995,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "The simulators and real aircraft training gave me confidence I never thought possible."
+                "The online sessions were just as effective as in-person. Flexible, private, and incredibly helpful for managing my stress at work."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/83a1ae5f-c842-4ee9-a912-505fc66a1ee0_320w.webp" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/83a1ae5f-c842-4ee9-a912-505fc66a1ee0_320w.webp" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
-                  <div className="text-slate-900 font-medium text-sm">Robert Chen</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">First Officer, United</div>
+                  <div className="text-slate-900 font-medium text-sm">Ethan Greenberg</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Online Therapy Client</div>
                 </div>
               </div>
             </div>
@@ -1022,15 +1022,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "State-of-the-art aircraft, experienced instructors, and a clear pathway to the airlines. Worth every penny."
+                "I'd been avoiding therapy for years. Coming here was a turning point. The approach is warm, evidence-based, and it genuinely works."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c92852bb-a510-405a-85ab-ffa0fde136a4_320w.jpg" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c92852bb-a510-405a-85ab-ffa0fde136a4_320w.jpg" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
                   <div className="text-slate-900 font-medium text-sm">Ryan Cooper</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">Captain, Regional Airline</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Individual Therapy Client</div>
                 </div>
               </div>
             </div>
@@ -1044,15 +1044,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "I never thought I could become a pilot. Coast Flight made it possible. The support system is incredible."
+                "I never thought talking to someone could make such a big difference. I came in feeling hopeless and I left with genuine hope and a plan."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/39e15168-9f77-4837-9a4b-89c74b8bc38b_320w.webp" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/39e15168-9f77-4837-9a4b-89c74b8bc38b_320w.webp" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
                   <div className="text-slate-900 font-medium text-sm">Amanda White</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">Student Pilot</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Individual Therapy Client</div>
                 </div>
               </div>
             </div>
@@ -1066,15 +1066,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "The G1000 avionics training prepared me for the real world. I felt ready on day one at the airlines."
+                "The CBT techniques I learned in my sessions have genuinely changed how I think and respond to stress. I use them every single day."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/2dbcdf02-39a2-4c13-95f7-3118cc995fa0_320w.webp" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/2dbcdf02-39a2-4c13-95f7-3118cc995fa0_320w.webp" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
                   <div className="text-slate-900 font-medium text-sm">Kevin Zhang</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">First Officer, FedEx</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Individual Therapy Client</div>
                 </div>
               </div>
             </div>
@@ -1089,15 +1089,15 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-slate-700 font-light mb-6 leading-relaxed">
-                "The accelerated program got me to the airlines faster than I ever imagined."
+                "Incredibly professional, warm, and effective. My anxiety has reduced dramatically after just a few months of working together."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E8573A]/20 to-[#E8573A]/5 rounded-full overflow-hidden border border-white/50">
-                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/90ec73f0-6fd3-4d0c-922c-fcc592c983df_320w.webp" className="w-full h-full object-cover" alt="Student" />
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/90ec73f0-6fd3-4d0c-922c-fcc592c983df_320w.webp" className="w-full h-full object-cover" alt="Client" />
                 </div>
                 <div>
                   <div className="text-slate-900 font-medium text-sm">Sophia Lee</div>
-                  <div className="text-slate-500 text-xs uppercase tracking-wider">First Officer, Southwest</div>
+                  <div className="text-slate-500 text-xs uppercase tracking-wider">Individual Therapy Client</div>
                 </div>
               </div>
             </div>
@@ -1132,11 +1132,11 @@ export default function Home() {
       <h2 className="font-display font-normal text-[clamp(2.5rem,5vw,4.5rem)] tracking-tighter leading-[1.1] mb-4 text-slate-900">
         Insights From the
         <br />
-        <span className="text-[#E8573A]">Flight Deck.</span>
+        <span className="text-[#E8573A]">Counselling Room.</span>
       </h2>
       <p className="text-[clamp(1rem,1.5vw,1.125rem)] font-light text-slate-500 max-w-[60ch] mx-auto leading-[1.6]">
-        Expert advice, industry news, and pilot stories to keep you informed
-        and inspired on your aviation journey.
+        Expert guidance, mental health tips, and stories of hope to support
+        you on your wellbeing journey.
       </p>
     </div>
 
@@ -1148,13 +1148,13 @@ export default function Home() {
           {/* Image */}
           <div className="relative h-56 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop" 
-              alt="How Creative Agencies Shape the Future of Brands"
+              src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=800&auto=format&fit=crop" 
+              alt="Understanding Anxiety"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="absolute top-4 left-4 bg-[#E8573A]/90 backdrop-blur-sm px-3 py-1 rounded-full">
-              <span className="text-white text-xs font-mono tracking-wider">AVIATION</span>
+              <span className="text-white text-xs font-mono tracking-wider">ANXIETY</span>
             </div>
           </div>
           
@@ -1166,11 +1166,11 @@ export default function Home() {
               <span>5 min read</span>
             </div>
             <h3 className="text-xl md:text-2xl font-display font-normal text-slate-900 mb-3 tracking-tight group-hover:text-[#E8573A] transition-colors duration-300">
-              How Modern Flight Training Shapes the Future of Aviation
+              Understanding Anxiety: What Your Body Is Trying to Tell You
             </h3>
             <p className="text-slate-600 font-light leading-relaxed mb-4">
-              From advanced simulators to AI-powered instruction, discover how 
-              today's flight schools are building the next generation of pilots.
+              Anxiety is more than just worry. Learn how to recognise the signs,
+              understand your triggers, and take the first steps toward relief.
             </p>
             <div className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300">
               READ MORE
@@ -1187,13 +1187,13 @@ export default function Home() {
         <div className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl overflow-hidden transition-all duration-500 hover:border-[#E8573A]/50 hover:bg-white/70 hover:shadow-2xl hover:-translate-y-2">
           <div className="relative h-56 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=800&auto=format&fit=crop" 
-              alt="The Real ROI of Smart Design"
+              src="https://images.unsplash.com/photo-1516401266446-6432a8a07d41?q=80&w=800&auto=format&fit=crop" 
+              alt="The Benefits of Couples Counselling"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="absolute top-4 left-4 bg-[#E8573A]/90 backdrop-blur-sm px-3 py-1 rounded-full">
-              <span className="text-white text-xs font-mono tracking-wider">CAREER</span>
+              <span className="text-white text-xs font-mono tracking-wider">RELATIONSHIPS</span>
             </div>
           </div>
           
@@ -1204,11 +1204,11 @@ export default function Home() {
               <span>4 min read</span>
             </div>
             <h3 className="text-xl md:text-2xl font-display font-normal text-slate-900 mb-3 tracking-tight group-hover:text-[#E8573A] transition-colors duration-300">
-              The Real ROI of Professional Flight Training
+              Why Couples Counselling Works — Even When It Feels Too Late
             </h3>
             <p className="text-slate-600 font-light leading-relaxed mb-4">
-              Is flight school worth the investment? We break down the numbers, 
-              career opportunities, and long-term earning potential for pilots.
+              Many couples wait until a breaking point to seek help. Here's why
+              starting sooner — or even now — can transform your relationship.
             </p>
             <div className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300">
               READ MORE
@@ -1225,13 +1225,13 @@ export default function Home() {
         <div className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl overflow-hidden transition-all duration-500 hover:border-[#E8573A]/50 hover:bg-white/70 hover:shadow-2xl hover:-translate-y-2">
           <div className="relative h-56 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=800&auto=format&fit=crop" 
-              alt="How Purpose-Driven Creativity Builds Brand Power"
+              src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop" 
+              alt="Mindfulness and Mental Health"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="absolute top-4 left-4 bg-[#E8573A]/90 backdrop-blur-sm px-3 py-1 rounded-full">
-              <span className="text-white text-xs font-mono tracking-wider">TECHNOLOGY</span>
+              <span className="text-white text-xs font-mono tracking-wider">MINDFULNESS</span>
             </div>
           </div>
           
@@ -1242,11 +1242,11 @@ export default function Home() {
               <span>6 min read</span>
             </div>
             <h3 className="text-xl md:text-2xl font-display font-normal text-slate-900 mb-3 tracking-tight group-hover:text-[#E8573A] transition-colors duration-300">
-              How Purpose-Driven Training Builds Better Pilots
+              5 Mindfulness Practices That Support Your Mental Health Daily
             </h3>
             <p className="text-slate-600 font-light leading-relaxed mb-4">
-              Beyond stick and rudder skills: How modern flight training develops 
-              decision-making, leadership, and professional excellence.
+              Small daily habits can make a profound difference. Discover five
+              evidence-based mindfulness practices recommended by our therapists.
             </p>
             <div className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300">
               READ MORE
@@ -1331,15 +1331,15 @@ export default function Home() {
       <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-6 animate-pulse">
         <div className="w-2 h-2 bg-[#E8573A] rounded-full animate-pulse" />
         <span className="font-mono text-xs font-light text-white uppercase tracking-widest">
-          Limited Availability • Apply Now
+          Limited Availability • Book Now
         </span>
       </div>
 
       {/* Main Heading with Split Text Effect */}
       <h2 className="font-display font-normal text-[clamp(2.5rem,5vw,5.5rem)] tracking-tight text-white leading-[1.05] mb-6">
-        Ready for
+        Ready to
         <span className="relative inline-block ml-2 md:ml-4">
-          <span className="text-[#E8573A]">Takeoff?</span>
+          <span className="text-[#E8573A]">Feel Better?</span>
           <svg className="absolute -bottom-2 left-0 w-full h-[3px] text-[#E8573A]" viewBox="0 0 200 4" fill="currentColor">
             <path d="M0,2 L200,2" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" />
           </svg>
@@ -1348,8 +1348,8 @@ export default function Home() {
 
       {/* Description with better readability */}
       <p className="font-sans text-[clamp(1rem,1.25vw,1.125rem)] font-light text-white/90 max-w-[45ch] mb-8 md:mb-10 leading-relaxed">
-        Book a campus tour or schedule a discovery flight. Our admissions
-        team responds within 24 hours. Zero obligations.
+        Book a free consultation or schedule your first session. Our team
+        responds within 24 hours. Completely confidential, zero obligations.
       </p>
 
       {/* CTA Buttons with hover effects */}
@@ -1359,7 +1359,7 @@ export default function Home() {
           className="group relative inline-flex items-center justify-center px-8 py-4 bg-[#E8573A] text-white text-sm font-medium tracking-widest uppercase rounded-full transition-all duration-300 hover:-translate-y-[2px] hover:bg-[#F06B4E] hover:shadow-[0_0_30px_rgba(232,87,58,0.4)] overflow-hidden"
         >
           <span className="relative z-10 flex items-center">
-            BOOK A DISCOVERY FLIGHT
+            BOOK A FREE CONSULTATION
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2 transition-transform group-hover:translate-x-1">
               <path d="M5 12h14" />
               <path d="m12 5 7 7-7 7" />
@@ -1370,7 +1370,7 @@ export default function Home() {
         </a>
         
         <a 
-          href="tel:8582794359" 
+          href="tel:+441234567890" 
           className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-light transition-colors group"
         >
           <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-[#E8573A]/20 transition-colors">
@@ -1378,7 +1378,7 @@ export default function Home() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
           </div>
-          <span className="group-hover:underline">or call (858) 279-4359</span>
+          <span className="group-hover:underline">or call +44 (0) 1234 567 890</span>
         </a>
       </div>
 
@@ -1402,7 +1402,7 @@ export default function Home() {
           <svg className="w-4 h-4 text-[#E8573A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
           </svg>
-          <span className="text-white/60 text-xs font-mono">Zero Obligations</span>
+          <span className="text-white/60 text-xs font-mono">100% Confidential</span>
         </div>
       </div>
     </div>
@@ -1417,33 +1417,33 @@ export default function Home() {
         <footer className="bg-white/80 backdrop-blur-sm border-t border-slate-200 relative pb-8 pt-16 md:pt-20 z-30">
           <div className="max-w-[90rem] mx-auto px-[clamp(1.5rem,5vw,5rem)] flex flex-col lg:flex-row justify-between gap-12 lg:gap-16 border-b border-slate-200 pb-12 lg:pb-16">
             <div className="flex flex-col justify-between max-w-xs">
-              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/7779c4e9-cf43-4379-a162-96455d9c5618_320w.png" alt="Coast Flight Training Logo" className="md:w-40 w-32 h-auto object-contain mb-8" />
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/7779c4e9-cf43-4379-a162-96455d9c5618_320w.png" alt="Serenity Counselling Logo" className="md:w-40 w-32 h-auto object-contain mb-8" />
               <div className="font-mono text-xs font-light text-slate-500 leading-[1.8] tracking-widest">
-                VELA SPACE SYSTEMS
+                SERENITY COUNSELLING
                 <br />
-                TOULOUSE SPACE CENTER
+                LICENSED & ACCREDITED THERAPISTS
                 <br />
-                ISO 14620 / AS9100D
+                BACP REGISTERED • GDPR COMPLIANT
               </div>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-24 w-full lg:w-auto">
               <div>
                 <h5 className="font-mono text-xs font-normal text-slate-900 tracking-[0.2em] mb-6 uppercase">
-                  Platforms
+                  Services
                 </h5>
                 <ul className="flex flex-col gap-4 font-mono text-sm font-light text-slate-500">
-                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">LEO Micro-Bus</a></li>
-                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">GEO High-Power</a></li>
-                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Deep Space Hub</a></li>
+                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Individual Therapy</a></li>
+                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Couples Counselling</a></li>
+                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Family Therapy</a></li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-mono text-xs font-normal text-slate-900 tracking-[0.2em] mb-6 uppercase">
-                  Company
+                  Practice
                 </h5>
                 <ul className="flex flex-col gap-4 font-mono text-sm font-light text-slate-500">
-                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Manifesto</a></li>
+                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Our Approach</a></li>
                   <li>
                     <a href="#" className="hover:text-[#F06B4E] transition-colors flex items-center gap-2">
                       Careers
@@ -1455,14 +1455,14 @@ export default function Home() {
               </div>
               <div className="col-span-2 md:col-span-1">
                 <h5 className="font-mono text-xs font-normal text-slate-900 tracking-[0.2em] mb-6 uppercase">
-                  Network
+                  Connect
                 </h5>
                 <ul className="flex flex-col gap-4 font-mono text-sm font-light text-slate-500">
-                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Twitter / X</a></li>
+                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Instagram</a></li>
                   <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">LinkedIn</a></li>
                   <li>
                     <a href="#" className="hover:text-[#F06B4E] transition-colors flex items-center gap-2">
-                      System Status
+                      Availability
                       <div className="w-1.5 h-1.5 bg-[#10B981] rounded-full animate-pulse" />
                     </a>
                   </li>
@@ -1473,7 +1473,7 @@ export default function Home() {
 
           <div className="w-full flex justify-center mt-6 md:mt-8">
             <span className="font-mono text-xs font-light text-slate-400 tracking-widest uppercase text-center px-4">
-              © 2024 VELA SPACE. ALL RIGHTS RESERVED.
+              © 2024 SERENITY COUNSELLING. ALL RIGHTS RESERVED.
             </span>
           </div>
         </footer>
