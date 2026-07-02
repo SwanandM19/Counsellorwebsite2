@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import LeadPopup from '@/components/LeadPopup'
 import Image from "next/image";
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   // State for countdown
@@ -232,47 +233,7 @@ export default function Home() {
       {/* SCROLLABLE CONTENT - Relative with transparent background */}
       <div className="relative z-10 bg-transparent">
         {/* Floating Navigation Pill */}
-        <nav id="navbar" className="fixed top-6 md:top-8 inset-x-0 mx-auto z-50 w-[92%] max-w-[55rem] transition-all duration-700 reveal-up is-visible" style={{ transitionDelay: '1s' }}>
-          <div className="flex items-center justify-between relative px-2.5 py-2.5 bg-white/80 backdrop-blur-xl border border-slate-900/10 rounded-full shadow-[0_10px_40px_-10px_rgba(0,0,0,0.05)]">
-            <div className="flex-none pl-3 z-10">
-              <a href="#" className="flex items-center gap-3 group/logo">
-                <Image
-                  src="/logo.png"
-                  alt="Serenity Counselling"
-                  width={160}
-                  height={42}
-                  className="h-7 w-auto object-contain transition-transform duration-500 group-hover/logo:scale-105"
-                  priority
-                /> </a>
-            </div>
-
-            <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 hidden md:flex items-center gap-1 px-4 border-x border-slate-900/10 h-[60%]">
-              <a href="#architecture" className="text-xs font-mono font-light text-slate-500 hover:text-slate-900 hover:bg-slate-900/5 px-4 py-2 rounded-full transition-all duration-300">
-                Services
-              </a>
-              <a href="#about" className="text-xs font-mono font-light text-slate-500 hover:text-slate-900 hover:bg-slate-900/5 px-4 py-2 rounded-full transition-all duration-300">
-                About
-              </a>
-              <a href="#admissions" className="text-xs font-mono font-light text-slate-500 hover:text-slate-900 hover:bg-slate-900/5 px-4 py-2 rounded-full transition-all duration-300">
-                Booking
-              </a>
-            </div>
-
-            <div className="flex-none pr-1 z-10">
-              <a href="#contact" className="codepen-button hidden md:inline-block">
-                <span className="px-5 py-2 text-xs font-mono tracking-wider flex items-center gap-2">
-                  BOOK SESSION
-                  {/* @ts-expect-error - web component */}
-                  <iconify-icon icon="solar:arrow-right-up-linear" className="w-4 h-4" />
-                </span>
-              </a>
-              <button className="md:hidden flex flex-col gap-1.5 p-3">
-                <div className="w-4 h-[1px] bg-slate-900" />
-                <div className="w-4 h-[1px] bg-slate-900" />
-              </button>
-            </div>
-          </div>
-        </nav>
+        <Navbar/>
 
         {/* Hero Section */}
         <section className="relative min-h-[100dvh] w-full flex items-center pt-[8rem] pb-[4rem] px-[clamp(1.5rem,5vw,5rem)] overflow-hidden">
