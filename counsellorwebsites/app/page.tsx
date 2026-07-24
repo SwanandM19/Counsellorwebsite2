@@ -2356,8 +2356,9 @@ export default function Home() {
             {/* Blog Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-up">
               {/* Blog Post 1 */}
-              <a href="/blog/understanding-anxiety" className="group block">
+              <a href="/blog/how-creative-agencies-shape-the-future" className="group block">
                 <div className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl overflow-hidden transition-all duration-500 hover:border-[#E8573A]/50 hover:bg-white/70 hover:shadow-2xl hover:-translate-y-2">
+                  {/* Image */}
                   <div className="relative h-56 overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=800&auto=format&fit=crop"
@@ -2369,6 +2370,8 @@ export default function Home() {
                       <span className="text-white text-xs font-mono tracking-wider">ANXIETY</span>
                     </div>
                   </div>
+
+                  {/* Content */}
                   <div className="p-6 md:p-8">
                     <div className="flex items-center gap-3 text-xs text-slate-500 font-mono mb-3">
                       <span>March 15, 2024</span>
@@ -2393,12 +2396,12 @@ export default function Home() {
               </a>
 
               {/* Blog Post 2 */}
-              <a href="/blog/couples-counselling" className="group block">
+              <a href="/blog/the-real-roi-of-smart-design" className="group block">
                 <div className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl overflow-hidden transition-all duration-500 hover:border-[#E8573A]/50 hover:bg-white/70 hover:shadow-2xl hover:-translate-y-2">
                   <div className="relative h-56 overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1516401266446-6432a8a07d41?q=80&w=800&auto=format&fit=crop"
-                      alt="Couples Counselling"
+                      alt="The Benefits of Couples Counselling"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -2406,6 +2409,7 @@ export default function Home() {
                       <span className="text-white text-xs font-mono tracking-wider">RELATIONSHIPS</span>
                     </div>
                   </div>
+
                   <div className="p-6 md:p-8">
                     <div className="flex items-center gap-3 text-xs text-slate-500 font-mono mb-3">
                       <span>March 10, 2024</span>
@@ -2430,12 +2434,12 @@ export default function Home() {
               </a>
 
               {/* Blog Post 3 */}
-              <a href="/blog/mindfulness-practices" className="group block">
+              <a href="/blog/how-purpose-driven-creativity-builds-brand-power" className="group block">
                 <div className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl overflow-hidden transition-all duration-500 hover:border-[#E8573A]/50 hover:bg-white/70 hover:shadow-2xl hover:-translate-y-2">
                   <div className="relative h-56 overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop"
-                      alt="Mindfulness Practices"
+                      alt="Mindfulness and Mental Health"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -2443,6 +2447,7 @@ export default function Home() {
                       <span className="text-white text-xs font-mono tracking-wider">MINDFULNESS</span>
                     </div>
                   </div>
+
                   <div className="p-6 md:p-8">
                     <div className="flex items-center gap-3 text-xs text-slate-500 font-mono mb-3">
                       <span>March 5, 2024</span>
@@ -2479,7 +2484,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* Final CTA - With Left-Aligned Content & Gradient Overlay */}
         <div className="relative z-20 px-[clamp(1.5rem,5vw,5rem)] py-[4rem] md:py-[8rem] bg-white/50 backdrop-blur-sm">
           <section className="cta-section relative w-full max-w-[90rem] mx-auto min-h-[55vh] flex flex-col md:flex-row items-center justify-between overflow-hidden rounded-3xl shadow-2xl">
