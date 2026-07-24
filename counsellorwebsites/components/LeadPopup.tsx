@@ -32,6 +32,18 @@ export default function LeadPopup() {
     return () => clearTimeout(timer)
   }, [])
 
+  // Allow any booking CTA on the site to open this shared form.
+  useEffect(() => {
+    const openPopup = () => {
+      setShowThankYou(false)
+      setStatus('idle')
+      setIsVisible(true)
+    }
+
+    window.addEventListener('openLeadPopup', openPopup)
+    return () => window.removeEventListener('openLeadPopup', openPopup)
+  }, [])
+
   // Prevent body scroll when popup is open
   useEffect(() => {
     if (isVisible) {

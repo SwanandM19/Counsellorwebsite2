@@ -1,3 +1,4 @@
+
 // 'use client';
 
 // import { useEffect, useRef, useState } from 'react';
@@ -211,10 +212,6 @@
 //       {/* Noise Overlay - Fixed */}
 //       <div className="fixed inset-0 pointer-events-none z-[9999] opacity-[0.03] mix-blend-multiply bg-noise" />
 
-//       {/* Global Layout Lines - Hidden */}
-//       {/* <div className="fixed inset-y-0 left-[clamp(1.5rem,5vw,5rem)] w-px bg-slate-900/[0.04] pointer-events-none z-0" />
-//       <div className="fixed inset-y-0 right-[clamp(1.5rem,5vw,5rem)] w-px bg-slate-900/[0.04] pointer-events-none z-0" /> */}
-
 //       {/* STATIC BACKGROUND - Fixed and never scrolls */}
 //       <div className="fixed inset-0 z-0">
 //         {/* Gradient Background */}
@@ -225,9 +222,6 @@
 
 //         {/* Right Cloud */}
 //         <div className="absolute -right-[15%] top-[5%] w-[60vw] min-w-[500px] aspect-square bg-[url('https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center mix-blend-screen opacity-90" style={{ WebkitMaskImage: 'radial-gradient(circle at center, black 15%, transparent 60%)', maskImage: 'radial-gradient(circle at center, black 15%, transparent 60%)', transform: 'scaleX(-1) rotate(5deg)' }} />
-
-//         {/* Background Grid - Hidden */}
-//         {/* <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:linear-gradient(to_bottom,white_20%,transparent_80%)]" /> */}
 //       </div>
 
 //       {/* SCROLLABLE CONTENT - Relative with transparent background */}
@@ -242,28 +236,28 @@
 //               <div className="inline-flex items-center gap-3 border border-slate-900/10 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full mb-8 reveal-up shadow-sm is-visible" style={{ transitionDelay: '1.1s' }}>
 //                 <div className="w-2 h-2 bg-[#E8573A] rounded-full animate-pulse shadow-[0_0_10px_rgba(232,87,58,0.20)]" />
 //                 <span className="font-mono text-xs font-light text-slate-900 uppercase tracking-widest">
-//                   Licensed & Certified Counsellor
+//                   RCI Registered Psychologist
 //                 </span>
 //               </div>
 
 //               <h1 className="font-display font-normal text-[clamp(2.5rem,8vw,9rem)] leading-[0.85] tracking-tighter text-slate-900 mb-8 reveal-up text-balance flex flex-col items-center w-full is-visible" style={{ transitionDelay: '1.2s' }}>
-//                 <span className="sr-only">Professional Counselling Services</span>
-//                 <span>HEALING BEGINS</span>
+//                 <span className="sr-only">Neuro Nest Counseling Center</span>
+//                 <span>HEALING MINDS</span>
 //                 <span className="flex items-center justify-center gap-3 md:gap-4 flex-wrap w-full">
-//                   WITH A SINGLE
+//                   GROWING
 //                   <span className="hidden sm:inline-flex h-[clamp(2.5rem,5vw,6rem)] w-[clamp(6rem,12vw,14rem)] bg-white border rounded-full items-center justify-center overflow-hidden relative group backdrop-blur-sm shadow-sm border-white">
 //                     <span className="bg-center group-hover:scale-110 transition-transform duration-1000 opacity-60 bg-[url(https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=320&q=80)] bg-cover absolute inset-0" />
 //                     <span className="z-[5] border-stone-50 absolute inset-0" />
 //                     <span className="text-xs text-neutral-50 tracking-widest font-mono z-10 relative">
-//                       STEP.
+//                       HEARTS
 //                     </span>
 //                   </span>
 //                 </span>
-//                 <span>YOU ARE NOT ALONE.</span>
+//                 <span>EMPOWERING LIVES</span>
 //               </h1>
 
 //               <p className="font-sans text-[clamp(1.125rem,1.5vw,1.5rem)] font-light text-slate-600 max-w-[50ch] leading-[1.6] mb-12 reveal-up text-balance is-visible" style={{ transitionDelay: '1.3s' }}>
-//                 Compassionate, Confidential Counselling for Individuals, Couples & Families.
+//                 Compassionate, Confidential Counseling for Children, Adolescents, Adults &amp; Families.
 //               </p>
 
 //               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full sm:w-auto reveal-up is-visible" style={{ transitionDelay: '1.4s' }}>
@@ -274,7 +268,7 @@
 //                     <iconify-icon icon="solar:heart-linear" className="w-5 h-5" />
 //                   </span>
 //                 </a>
-//                 <a href="#architecture" className="group flex items-center justify-center gap-3 h-14 px-6 text-xs text-slate-500 hover:text-slate-900 font-mono font-light tracking-widest transition-colors w-full sm:w-auto">
+//                 <a href="#services" className="group flex items-center justify-center gap-3 h-14 px-6 text-xs text-slate-500 hover:text-slate-900 font-mono font-light tracking-widest transition-colors w-full sm:w-auto">
 //                   <div className="w-8 h-[1px] bg-slate-300 group-hover:w-12 group-hover:bg-slate-900 transition-all duration-300" />
 //                   EXPLORE SERVICES
 //                 </a>
@@ -292,14 +286,15 @@
 //             </div>
 //           </div>
 //         </section>
+
 //         {/* Metrics - Now with semi-transparent background */}
 //         <section className="border-y border-slate-200 relative z-20 bg-white/80 backdrop-blur-sm">
 //           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-slate-200 w-full">
 //             {[
-//               { label: 'CLIENTS HELPED', target: 850, suffix: '+', description: 'Individuals, couples and families supported on their healing journey.' },
-//               { label: 'SUCCESS RATE', target: 94, suffix: '%', description: 'Clients report significant improvement after completing their program.' },
-//               { label: 'YEARS EXPERIENCE', target: 12, suffix: '+', description: 'Specialised experience across anxiety, trauma, relationships & more.' },
-//               { label: 'SESSIONS DELIVERED', target: 5, suffix: 'K+', description: 'Over five thousand hours of one-on-one and group counselling sessions.' }
+//               { label: 'YEARS EXPERIENCE', target: 15, suffix: '+', description: 'Dedicated to supporting children, adolescents, adults, and families.' },
+//               { label: 'CLIENTS HELPED', target: 850, suffix: '+', description: 'Individuals and families supported on their healing journey.' },
+//               { label: 'EXPERTISE AREAS', target: 8, suffix: '+', description: 'Specialized in child counseling, ADHD, autism, learning difficulties & more.' },
+//               { label: 'THERAPY MODALITIES', target: 5, suffix: '+', description: 'Remedial, ABA, Behaviour Therapy & evidence-based interventions.' }
 //             ].map((metric, idx) => (
 //               <div key={idx} className="p-10 lg:p-14 flex flex-col justify-between aspect-square group bg-white/50 hover:bg-[#E8573A] transition-colors duration-500 cursor-default relative overflow-hidden">
 //                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center opacity-0 group-hover:opacity-10 transition-opacity duration-700 mix-blend-multiply grayscale" />
@@ -320,50 +315,52 @@
 //           </div>
 //         </section>
 
-//         {/* Architecture / Asymmetric Bento Grid */}
-//         <section id="architecture" className="py-[6rem] md:py-[10rem] px-[clamp(1.5rem,5vw,5rem)] relative z-10 bg-white/90 backdrop-blur-sm">
+//         {/* Services Section - Asymmetric Bento Grid */}
+//         <section id="services" className="py-[6rem] md:py-[10rem] px-[clamp(1.5rem,5vw,5rem)] relative z-10 bg-white/90 backdrop-blur-sm">
 //           <div className="max-w-[90rem] mx-auto">
 //             <div className="mb-12 md:mb-20 reveal-up is-visible">
 //               <span className="font-mono text-xs font-light text-[#E8573A] tracking-[0.2em] uppercase flex items-center gap-3 mb-6">
 //                 <span className="w-2 h-2 bg-[#E8573A]" />
-//                 Counselling Services
+//                 Our Therapy Services
 //               </span>
 //               <h2 className="font-display font-normal text-[clamp(2.5rem,5vw,4.5rem)] tracking-tighter leading-none mb-6 text-slate-900">
-//                 Your Path to
+//                 Evidence-Based
 //                 <br />
-//                 <span className="text-slate-400">Wellness & Healing.</span>
+//                 <span className="text-slate-400">Therapeutic Interventions.</span>
 //               </h2>
 //               <p className="text-[clamp(1.125rem,1.5vw,1.25rem)] font-light text-slate-500 max-w-[45ch] leading-[1.6]">
-//                 From personal struggles to relationship challenges. Our tailored
-//                 programmes are designed to support your mental health and emotional wellbeing.
+//                 At Neuro Nest Counseling Center, we provide personalized, evidence-based therapeutic interventions tailored to each individual's unique needs.
 //               </p>
 //             </div>
 
 //             {/* Asymmetric Grid */}
 //             <div className="grid grid-cols-1 md:grid-cols-12 gap-4 auto-rows-auto md:auto-rows-[24rem]">
-//               {/* Main Featured Box */}
+//               {/* Main Featured Box - Remedial Therapy */}
 //               <div className="md:col-span-8 md:row-span-2 bg-white border border-slate-200 relative overflow-hidden transition-all duration-700 group hover:border-slate-300 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.05)] flex flex-col justify-between reveal-up min-h-[24rem] bento-card hover:scale-[1.01] hover:z-20 rounded-xl is-visible">
 //                 <div className="absolute inset-0 z-0 overflow-hidden rounded-xl">
 //                   <div className="absolute bottom-0 left-0 right-0 h-[65%] bg-gradient-to-t from-white via-white/70 to-transparent z-10 pointer-events-none" />
-//                   <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1600&auto=format&fit=crop" alt="Individual Counselling" className="w-full h-full object-cover saturate-[1.1] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05]" />
+//                   <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1600&auto=format&fit=crop" alt="Remedial Therapy" className="w-full h-full object-cover saturate-[1.1] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05]" />
 //                 </div>
 //                 <div className="z-10 relative h-full flex flex-col justify-between p-8 md:p-12 pointer-events-none">
 //                   <div className="flex justify-between items-start mb-12 md:mb-0">
 //                     <div className="font-mono text-xs font-light bg-white/80 border border-slate-200 px-3 py-1 rounded-full text-slate-600 backdrop-blur-md">
-//                       PROGRAM_01
+//                       THERAPY_01
 //                     </div>
 //                     {/* @ts-expect-error - web component */}
-//                     <iconify-icon icon="solar:paperplane-linear" className="w-8 h-8 text-slate-900 opacity-40 group-hover:opacity-100 group-hover:text-[#F06B4E] transition-all duration-500 text-3xl" />
+//                     <iconify-icon icon="solar:book-linear" className="w-8 h-8 text-slate-900 opacity-40 group-hover:opacity-100 group-hover:text-[#F06B4E] transition-all duration-500 text-3xl" />
 //                   </div>
 //                   <div className="max-w-[32rem] pointer-events-auto">
 //                     <h3 className="font-display font-normal text-[clamp(2rem,3vw,3rem)] text-slate-900 mb-4 leading-none tracking-tight drop-shadow-sm group-hover:drop-shadow-none">
-//                       Individual Therapy
+//                       Remedial Therapy
 //                     </h3>
 //                     <p className="text-base font-light text-slate-600 leading-[1.6] mb-8 group-hover:text-slate-800 transition-colors">
-//                       One-on-one sessions tailored to your unique needs — helping you
-//                       work through anxiety, depression, trauma, grief, and life transitions
-//                       in a safe and confidential space.
+//                       Designed for children who experience learning difficulties in reading, writing, spelling, mathematics, attention, or academic performance. Individualized teaching strategies to improve learning skills, confidence, and school performance.
 //                     </p>
+//                     <div className="flex flex-wrap gap-2 mb-6">
+//                       <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Learning Disabilities</span>
+//                       <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Reading & Writing</span>
+//                       <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Attention & Concentration</span>
+//                     </div>
 //                     <a href="#" className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors">
 //                       LEARN MORE
 //                       {/* @ts-expect-error - web component */}
@@ -373,24 +370,29 @@
 //                 </div>
 //               </div>
 
+//               {/* ABA Therapy */}
 //               <div className="md:col-span-4 md:row-span-2 bg-white border border-slate-200 relative overflow-hidden transition-all duration-700 group hover:border-slate-300 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.05)] flex flex-col justify-between reveal-up min-h-[24rem] bento-card hover:scale-[1.01] hover:z-20 rounded-xl is-visible" style={{ transitionDelay: '0.1s' }}>
 //                 <div className="absolute inset-0 z-0 overflow-hidden rounded-xl">
 //                   <div className="absolute bottom-0 left-0 right-0 h-[65%] bg-gradient-to-t from-white via-white/70 to-transparent z-10 pointer-events-none" />
-//                   <img src="https://images.unsplash.com/photo-1516401266446-6432a8a07d41?q=80&w=1600&auto=format&fit=crop" alt="Couples Counselling" className="w-full h-full object-cover contrast-[1.08] saturate-[1.05] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05]" />
+//                   <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1600&auto=format&fit=crop" alt="ABA Therapy" className="w-full h-full object-cover contrast-[1.08] saturate-[1.05] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05]" />
 //                 </div>
 //                 <div className="z-10 relative h-full flex flex-col justify-between p-8 md:p-12 pointer-events-none">
 //                   <div className="flex justify-between items-start mb-8 md:mb-12">
 //                     <div className="font-mono text-xs font-light bg-white/80 border border-slate-200 px-3 py-1 rounded-full text-slate-600 backdrop-blur-md">
-//                       PROGRAM_02
+//                       THERAPY_02
 //                     </div>
 //                   </div>
 //                   <div className="pointer-events-auto">
 //                     <h3 className="font-display font-normal text-[clamp(1.5rem,2.5vw,2rem)] text-slate-900 mb-3 tracking-tight">
-//                       Couples Counselling
+//                       ABA Therapy
 //                     </h3>
-//                     <p className="text-base font-light text-slate-600 leading-relaxed mb-6 group-hover:text-slate-800 transition-colors">
-//                       Rebuild connection, communication, and trust with your partner.
+//                     <p className="text-base font-light text-slate-600 leading-relaxed mb-4 group-hover:text-slate-800 transition-colors">
+//                       Structured, evidence-based intervention that helps children develop positive behaviours, communication, social interaction, and independence through positive reinforcement.
 //                     </p>
+//                     <div className="flex flex-wrap gap-2 mb-4">
+//                       <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Autism Spectrum</span>
+//                       <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Developmental Delays</span>
+//                     </div>
 //                     <a href="#" className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors">
 //                       LEARN MORE
 //                       {/* @ts-expect-error - web component */}
@@ -400,23 +402,28 @@
 //                 </div>
 //               </div>
 
-//               {/* Horizontal Wide Box */}
+//               {/* Behaviour Therapy - Wide Box */}
 //               <div className="md:col-span-12 bg-white border border-slate-200 relative overflow-hidden transition-all duration-700 group hover:border-slate-300 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.05)] flex flex-col md:flex-row reveal-up bento-card hover:scale-[1.01] hover:z-20 rounded-xl is-visible" style={{ transitionDelay: '0.2s' }}>
 //                 <div className="absolute inset-0 z-0 overflow-hidden rounded-xl">
 //                   <div className="absolute inset-0 bg-gradient-to-t from-white via-white/70 to-transparent md:bg-gradient-to-r md:from-white md:via-white/70 md:to-transparent z-10 pointer-events-none" />
-//                   <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1600&auto=format&fit=crop" alt="Family Therapy" className="contrast-[1.05] saturate-[1.05] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05] w-full h-full object-cover" />
+//                   <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1600&auto=format&fit=crop" alt="Behaviour Therapy" className="contrast-[1.05] saturate-[1.05] transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:brightness-[1.08] group-hover:contrast-[1.05] w-full h-full object-cover" />
 //                 </div>
 //                 <div className="p-8 md:p-12 flex-1 flex flex-col justify-center z-10 relative w-full pointer-events-none">
 //                   <div className="font-mono text-xs font-light bg-white/80 border border-slate-200 px-3 py-1 rounded-full text-slate-600 self-start mb-6 backdrop-blur-md">
-//                     PROGRAM_03
+//                     THERAPY_03
 //                   </div>
 //                   <h3 className="font-display font-normal text-[clamp(1.75rem,2.5vw,2.25rem)] text-slate-900 mb-4 tracking-tight">
-//                     Family Therapy
+//                     Behaviour Therapy
 //                   </h3>
-//                   <p className="text-base font-light text-slate-600 leading-[1.6] max-w-[40ch] mb-6 group-hover:text-slate-800 transition-colors">
-//                     Strengthen family bonds and resolve conflict in a supportive,
-//                     structured environment guided by an experienced therapist.
+//                   <p className="text-base font-light text-slate-600 leading-[1.6] max-w-[40ch] mb-4 group-hover:text-slate-800 transition-colors">
+//                     Helps individuals understand and change behaviours that affect their daily functioning. Focuses on building healthy habits, improving emotional regulation, increasing self-control, and developing effective coping skills.
 //                   </p>
+//                   <div className="flex flex-wrap gap-2 mb-4">
+//                     <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Anger Management</span>
+//                     <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Anxiety & Stress</span>
+//                     <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">ADHD</span>
+//                     <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Emotional Regulation</span>
+//                   </div>
 //                   <a href="#" className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors pointer-events-auto">
 //                     LEARN MORE
 //                     {/* @ts-expect-error - web component */}
@@ -427,7 +434,8 @@
 //             </div>
 //           </div>
 //         </section>
-//         {/* How It Works - Flight Training Journey */}
+
+//         {/* How It Works - Three Simple Steps */}
 //         <section id="how-it-works" className="py-[6rem] md:py-[10rem] px-[clamp(1.5rem,5vw,5rem)] relative z-10">
 //           <div className="max-w-[90rem] mx-auto">
 //             {/* Section Header */}
@@ -451,14 +459,10 @@
 
 //             {/* Main Glass Container */}
 //             <div className="relative rounded-3xl bg-white/20 backdrop-blur-xl border border-white/30 shadow-2xl overflow-hidden reveal-up">
-//               {/* Subtle inner glow */}
 //               <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-white/5 pointer-events-none" />
-
-//               {/* Background decorative elements */}
 //               <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#E8573A]/10 rounded-full blur-3xl" />
 //               <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#E8573A]/5 rounded-full blur-3xl" />
 
-//               {/* Steps Grid inside glass container */}
 //               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 relative p-8 md:p-12">
 //                 {/* Connecting Line (Desktop) */}
 //                 <div className="hidden md:block absolute top-[30%] left-[15%] right-[15%] h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
@@ -466,10 +470,7 @@
 //                 {/* Step 1 */}
 //                 <div className="relative group reveal-up" style={{ transitionDelay: '0.1s' }}>
 //                   <div className="bg-white/40 backdrop-blur-md border border-white/50 rounded-2xl p-8 md:p-10 hover:border-[#E8573A]/50 hover:bg-white/50 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden shadow-lg">
-//                     {/* Glass reflection effect */}
 //                     <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
-//                     {/* Step Number */}
 //                     <div className="flex items-center justify-between mb-6">
 //                       <div className="text-7xl md:text-8xl font-display font-bold text-white/30 group-hover:text-[#E8573A]/20 transition-colors duration-500">
 //                         01
@@ -480,26 +481,18 @@
 //                         </svg>
 //                       </div>
 //                     </div>
-
 //                     <h3 className="text-2xl md:text-3xl font-display font-normal text-slate-900 mb-3 tracking-tight">
 //                       Book Your
 //                       <br />
 //                       Free Consultation
 //                     </h3>
-
 //                     <p className="text-slate-600 font-light leading-relaxed mb-6">
 //                       Schedule a no-obligation introductory call. Meet your counsellor, share what's on your mind, and see if we're the right fit for you.
 //                     </p>
-
 //                     <div className="flex items-center gap-2 text-xs font-mono text-[#E8573A]">
 //                       <span className="bg-[#E8573A]/10 px-2 py-1 rounded-full">STEP 1</span>
-//                       <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-//                       </svg>
 //                     </div>
 //                   </div>
-
-//                   {/* Feature Tags */}
 //                   <div className="flex flex-wrap gap-2 mt-4 px-2">
 //                     <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">Completely confidential</span>
 //                     <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">•</span>
@@ -511,7 +504,6 @@
 //                 <div className="relative group reveal-up" style={{ transitionDelay: '0.2s' }}>
 //                   <div className="bg-white/40 backdrop-blur-md border border-white/50 rounded-2xl p-8 md:p-10 hover:border-[#E8573A]/50 hover:bg-white/50 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden shadow-lg">
 //                     <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
 //                     <div className="flex items-center justify-between mb-6">
 //                       <div className="text-7xl md:text-8xl font-display font-bold text-white/30 group-hover:text-[#E8573A]/20 transition-colors duration-500">
 //                         02
@@ -522,25 +514,18 @@
 //                         </svg>
 //                       </div>
 //                     </div>
-
 //                     <h3 className="text-2xl md:text-3xl font-display font-normal text-slate-900 mb-3 tracking-tight">
 //                       Choose Your
 //                       <br />
 //                       Therapy Plan
 //                     </h3>
-
 //                     <p className="text-slate-600 font-light leading-relaxed mb-6">
 //                       Select from individual, couples, or family counselling. Each plan is personalised to your goals, schedule, and needs.
 //                     </p>
-
 //                     <div className="flex items-center gap-2 text-xs font-mono text-[#E8573A]">
 //                       <span className="bg-[#E8573A]/10 px-2 py-1 rounded-full">STEP 2</span>
-//                       <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-//                       </svg>
 //                     </div>
 //                   </div>
-
 //                   <div className="flex flex-wrap gap-2 mt-4 px-2">
 //                     <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">Flexible scheduling</span>
 //                     <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">•</span>
@@ -552,7 +537,6 @@
 //                 <div className="relative group reveal-up" style={{ transitionDelay: '0.3s' }}>
 //                   <div className="bg-white/40 backdrop-blur-md border border-white/50 rounded-2xl p-8 md:p-10 hover:border-[#E8573A]/50 hover:bg-white/50 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden shadow-lg">
 //                     <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
 //                     <div className="flex items-center justify-between mb-6">
 //                       <div className="text-7xl md:text-8xl font-display font-bold text-white/30 group-hover:text-[#E8573A]/20 transition-colors duration-500">
 //                         03
@@ -563,25 +547,18 @@
 //                         </svg>
 //                       </div>
 //                     </div>
-
 //                     <h3 className="text-2xl md:text-3xl font-display font-normal text-slate-900 mb-3 tracking-tight">
 //                       Begin Your
 //                       <br />
 //                       Healing Journey
 //                     </h3>
-
 //                     <p className="text-slate-600 font-light leading-relaxed mb-6">
 //                       Attend regular sessions, build coping strategies, and experience genuine, lasting change with your dedicated counsellor.
 //                     </p>
-
 //                     <div className="flex items-center gap-2 text-xs font-mono text-[#E8573A]">
 //                       <span className="bg-[#E8573A]/10 px-2 py-1 rounded-full">STEP 3</span>
-//                       <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-//                       </svg>
 //                     </div>
 //                   </div>
-
 //                   <div className="flex flex-wrap gap-2 mt-4 px-2">
 //                     <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">Ongoing support</span>
 //                     <span className="text-[10px] font-mono text-slate-500/70 uppercase tracking-wider">•</span>
@@ -603,7 +580,8 @@
 //             </div>
 //           </div>
 //         </section>
-//         {/* About Section - Lead Instructor */}
+
+//         {/* About Section - Meet Your Psychologist */}
 //         <section id="about" className="py-[6rem] md:py-[10rem] px-[clamp(1.5rem,5vw,5rem)] relative z-10">
 //           <div className="max-w-[90rem] mx-auto">
 //             {/* Section Header */}
@@ -611,7 +589,7 @@
 //               <div className="inline-flex items-center gap-3 border border-slate-900/10 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full mb-6">
 //                 <div className="w-2 h-2 bg-[#E8573A] rounded-full animate-pulse" />
 //                 <span className="font-mono text-xs font-light text-slate-900 uppercase tracking-widest">
-//                   Meet Your Counsellor
+//                   Meet Your Psychologist
 //                 </span>
 //               </div>
 //               <h2 className="font-display font-normal text-[clamp(2.5rem,5vw,4.5rem)] tracking-tighter leading-[1.1] mb-4 text-slate-900">
@@ -620,31 +598,16 @@
 //                 <span className="text-[#E8573A]">Trust With Your Story.</span>
 //               </h2>
 //               <p className="text-[clamp(1rem,1.5vw,1.125rem)] font-light text-slate-500 max-w-[60ch] mx-auto leading-[1.6]">
-//                 Work with a licensed therapist who genuinely cares about your progress
+//                 Work with an RCI Registered Psychologist who genuinely cares about your progress
 //                 and is dedicated to helping you live a healthier, more fulfilling life.
 //               </p>
 //             </div>
 
 //             {/* Main Glass Container */}
 //             <div className="relative rounded-3xl bg-white/20 backdrop-blur-xl border border-white/30 shadow-2xl overflow-hidden reveal-up">
-//               {/* Subtle inner glow */}
 //               <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-white/5 pointer-events-none" />
-
-//               {/* Background decorative elements */}
 //               <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#E8573A]/10 rounded-full blur-3xl" />
 //               <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#E8573A]/5 rounded-full blur-3xl" />
-
-//               {/* Decorative aviation elements */}
-//               <div className="absolute top-10 right-10 opacity-10">
-//                 <svg className="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
-//                 </svg>
-//               </div>
-//               <div className="absolute bottom-10 left-10 opacity-10">
-//                 <svg className="w-20 h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-//                 </svg>
-//               </div>
 
 //               {/* Content Grid */}
 //               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 relative p-8 md:p-12">
@@ -653,19 +616,16 @@
 //                   <div className="absolute inset-0 bg-gradient-to-br from-[#E8573A]/20 to-transparent rounded-2xl blur-2xl group-hover:blur-3xl transition-all duration-700" />
 //                   <div className="relative rounded-2xl overflow-hidden border border-white/50 bg-white/30 backdrop-blur-sm shadow-xl">
 //                     <img
-//   src="/counsellor.png"
-//   alt="Dr. Sarah Mitchell - Lead Counsellor"
-//   className="w-full h-full object-cover aspect-[4/5] grayscale-[0.2] hover:grayscale-0 transition-all duration-700 scale-100 hover:scale-105"
-// />
-//                     {/* Overlay gradient */}
-//                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
+//                       src="/counsellor.png"
+//                       alt="Rama Amte - RCI Registered Psychologist"
+//                       className="w-full h-full object-cover aspect-[4/5] grayscale-[0.2] hover:grayscale-0 transition-all duration-700 scale-100 hover:scale-105"
+//                     />
 //                     {/* Badge */}
 //                     <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md border border-white rounded-full px-4 py-2">
 //                       <div className="flex items-center gap-2">
 //                         <div className="w-2 h-2 bg-[#E8573A] rounded-full animate-pulse" />
 //                         <span className="text-xs font-mono font-light text-slate-900 tracking-wider">
-//                           LICENSED THERAPIST • 12+ YEARS
+//                           RCI REGISTERED • 15+ YEARS
 //                         </span>
 //                       </div>
 //                     </div>
@@ -674,74 +634,83 @@
 
 //                 {/* Content Section */}
 //                 <div className="flex flex-col justify-center space-y-6">
-//                   {/* Name & Title */}
 //                   <div className="reveal-up">
 //                     <h3 className="text-4xl md:text-5xl font-display font-normal text-slate-900 mb-3 tracking-tight">
-//                       Dr. Sarah Mitchell
+//                       Rama Amte
 //                     </h3>
-//                     <div className="inline-flex items-center gap-2 bg-[#E8573A]/10 backdrop-blur-sm px-3 py-1 rounded-full border border-[#E8573A]/20">
-//                       <span className="w-1.5 h-1.5 bg-[#E8573A] rounded-full" />
-//                       <span className="text-xs font-mono font-light text-[#E8573A] tracking-wider">
-//                         MSc • BACP Accredited • CBT Specialist
-//                       </span>
+//                     <div className="flex flex-wrap gap-2 mb-3">
+//                       <div className="inline-flex items-center gap-2 bg-[#E8573A]/10 backdrop-blur-sm px-3 py-1 rounded-full border border-[#E8573A]/20">
+//                         <span className="w-1.5 h-1.5 bg-[#E8573A] rounded-full" />
+//                         <span className="text-xs font-mono font-light text-[#E8573A] tracking-wider">M.A. Psychology</span>
+//                       </div>
+//                       <div className="inline-flex items-center gap-2 bg-[#E8573A]/10 backdrop-blur-sm px-3 py-1 rounded-full border border-[#E8573A]/20">
+//                         <span className="w-1.5 h-1.5 bg-[#E8573A] rounded-full" />
+//                         <span className="text-xs font-mono font-light text-[#E8573A] tracking-wider">B.Ed. (Special Education)</span>
+//                       </div>
+//                       <div className="inline-flex items-center gap-2 bg-[#E8573A]/10 backdrop-blur-sm px-3 py-1 rounded-full border border-[#E8573A]/20">
+//                         <span className="w-1.5 h-1.5 bg-[#E8573A] rounded-full" />
+//                         <span className="text-xs font-mono font-light text-[#E8573A] tracking-wider">RCI Registered Psychologist</span>
+//                       </div>
 //                     </div>
 //                   </div>
 
 //                   {/* Bio Text */}
 //                   <div className="space-y-4 reveal-up" style={{ transitionDelay: '0.1s' }}>
 //                     <p className="text-slate-600 font-light leading-relaxed">
-//                       Dr. Sarah Mitchell is a fully accredited counsellor and psychotherapist
-//                       with a Master's degree in Clinical Psychology. She specialises in
-//                       anxiety, depression, trauma recovery, and relationship counselling,
-//                       working with individuals, couples, and families.
+//                       <strong>Rama Amte</strong> is an <strong>RCI Registered Psychologist</strong> with a Master's degree in Psychology (M.A.) and a Bachelor of Education in Special Education (B.Ed.). With over <strong>15 years of professional experience</strong>, she has been dedicated to supporting children, adolescents, adults, and families through evidence-based psychological assessment, counseling, and intervention.
 //                     </p>
 //                     <p className="text-slate-600 font-light leading-relaxed">
-//                       Her approach combines evidence-based therapies including CBT and
-//                       mindfulness with a warm, client-centred style. When she's not in
-//                       session, Sarah volunteers at local mental health charities and
-//                       mentors trainee therapists in the community.
+//                       Rama believes that every individual has unique strengths and the ability to grow when provided with the right guidance, understanding, and support. Her counseling approach is compassionate, confidential, client-centered, and tailored to each individual's needs.
 //                     </p>
 //                   </div>
 
+//                   {/* Expertise Areas */}
+//                   <div className="reveal-up" style={{ transitionDelay: '0.2s' }}>
+//                     <h4 className="text-sm font-semibold text-slate-900 mb-3">Areas of Expertise:</h4>
+//                     <div className="flex flex-wrap gap-2">
+//                       {[
+//                         'Child & Adolescent Counseling',
+//                         'Behaviour Management',
+//                         'Learning Difficulties',
+//                         'ADHD & Autism',
+//                         'Parent Guidance',
+//                         'Emotional Well-being',
+//                         'School Counseling',
+//                         'Psychoeducational Assessment'
+//                       ].map((item) => (
+//                         <span key={item} className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">
+//                           {item}
+//                         </span>
+//                       ))}
+//                     </div>
+//                   </div>
+
 //                   {/* Credentials Grid */}
-//                   <div className="grid grid-cols-2 gap-4 pt-4 reveal-up" style={{ transitionDelay: '0.2s' }}>
+//                   <div className="grid grid-cols-2 gap-4 pt-4 reveal-up" style={{ transitionDelay: '0.3s' }}>
+//                     <div className="bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-white/40">
+//                       <div className="text-2xl font-display text-[#E8573A] mb-1">15+</div>
+//                       <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Years Experience</div>
+//                     </div>
+//                     <div className="bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-white/40">
+//                       <div className="text-2xl font-display text-[#E8573A] mb-1">3</div>
+//                       <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Specializations</div>
+//                     </div>
+//                     <div className="bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-white/40">
+//                       <div className="text-2xl font-display text-[#E8573A] mb-1">RCI</div>
+//                       <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Registered</div>
+//                     </div>
 //                     <div className="bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-white/40">
 //                       <div className="text-2xl font-display text-[#E8573A] mb-1">850+</div>
 //                       <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Clients Helped</div>
 //                     </div>
-//                     <div className="bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-white/40">
-//                       <div className="text-2xl font-display text-[#E8573A] mb-1">5,000+</div>
-//                       <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Sessions Delivered</div>
-//                     </div>
-//                     <div className="bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-white/40">
-//                       <div className="text-2xl font-display text-[#E8573A] mb-1">3</div>
-//                       <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Specialisations</div>
-//                     </div>
-//                     <div className="bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-white/40">
-//                       <div className="text-2xl font-display text-[#E8573A] mb-1">12+</div>
-//                       <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">Years Experience</div>
-//                     </div>
 //                   </div>
 
-//                   {/* Social/Contact Links */}
-//                   <div className="flex gap-4 pt-4 reveal-up" style={{ transitionDelay: '0.3s' }}>
-//                     <a href="#" className="w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm border border-white/50 flex items-center justify-center hover:bg-[#E8573A] hover:border-[#E8573A] transition-all duration-300 group">
-//                       <svg className="w-4 h-4 text-slate-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-//                         <circle cx="4" cy="4" r="2" stroke="none" fill="currentColor" />
-//                       </svg>
-//                     </a>
-//                     <a href="#" className="w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm border border-white/50 flex items-center justify-center hover:bg-[#E8573A] hover:border-[#E8573A] transition-all duration-300 group">
-//                       <svg className="w-4 h-4 text-slate-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M22 12.1c0 1.8-.3 3.6-.9 5.3-.6 1.7-1.5 3.2-2.6 4.5-1.1 1.3-2.4 2.3-3.9 3-1.5.7-3.1 1-4.7 1-1.6 0-3.2-.3-4.7-1-1.5-.7-2.8-1.7-3.9-3-1.1-1.3-2-2.8-2.6-4.5-.6-1.7-.9-3.5-.9-5.3 0-1.8.3-3.6.9-5.3.6-1.7 1.5-3.2 2.6-4.5 1.1-1.3 2.4-2.3 3.9-3 1.5-.7 3.1-1 4.7-1 1.6 0 3.2.3 4.7 1 1.5.7 2.8 1.7 3.9 3 1.1 1.3 2 2.8 2.6 4.5.6 1.7.9 3.5.9 5.3z" />
-//                         <path d="M7.5 12.5L10 10l2 2.5 4-5" />
-//                       </svg>
-//                     </a>
-//                     <a href="#" className="w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm border border-white/50 flex items-center justify-center hover:bg-[#E8573A] hover:border-[#E8573A] transition-all duration-300 group">
-//                       <svg className="w-4 h-4 text-slate-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 2h-3a4 4 0 00-4 4v3H7v4h3v8h4v-8h3l1-4h-4V6a1 1 0 011-1h3V2z" />
-//                       </svg>
-//                     </a>
+//                   {/* Mission Statement */}
+//                   <div className="reveal-up p-4 bg-[#E8573A]/5 rounded-xl border border-[#E8573A]/10" style={{ transitionDelay: '0.4s' }}>
+//                     <p className="text-sm font-light text-slate-700 italic leading-relaxed">
+//                       &ldquo;Every mind deserves understanding. Every child deserves an opportunity. Every family deserves hope.&rdquo;
+//                     </p>
+//                     <p className="text-xs font-mono text-slate-500 mt-2">— Rama Amte, Neuro Nest Counseling Center</p>
 //                   </div>
 //                 </div>
 //               </div>
@@ -751,7 +720,7 @@
 //             <div className="text-center mt-12 reveal-up" style={{ transitionDelay: '0.4s' }}>
 //               <a href="#contact" className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors">
 //                 <span className="w-8 h-px bg-slate-300 group-hover:w-12 group-hover:bg-[#E8573A] transition-all duration-300" />
-//                 MEET THE FULL TEAM
+//                 BOOK YOUR HEALING SESSION
 //                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 //                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
 //                 </svg>
@@ -759,27 +728,25 @@
 //             </div>
 //           </div>
 //         </section>
+
 //         <style>{`
-//   @keyframes scrollDown {
-//     0% { transform: translateY(0); }
-//     100% { transform: translateY(-50%); }
-//   }
-//   @keyframes scrollUp {
-//     0% { transform: translateY(-50%); }
-//     100% { transform: translateY(0); }
-//   }
-//   .animate-scroll-down {
-//     animation: scrollDown 25s linear infinite;
-//   }
-//   .animate-scroll-up {
-//     animation: scrollUp 25s linear infinite;
-//   }
-// `}</style>
+//           @keyframes scrollDown {
+//             0% { transform: translateY(0); }
+//             100% { transform: translateY(-50%); }
+//           }
+//           @keyframes scrollUp {
+//             0% { transform: translateY(-50%); }
+//             100% { transform: translateY(0); }
+//           }
+//           .animate-scroll-down {
+//             animation: scrollDown 25s linear infinite;
+//           }
+//           .animate-scroll-up {
+//             animation: scrollUp 25s linear infinite;
+//           }
+//         `}</style>
+
 //         {/* Testimonials Section - Moving Columns */}
-//         {/* ============================================================
-//     VOICES OF OUR HEALING COMMUNITY — Photo & Video Gallery
-//     ============================================================ */}
-//         {/* ── VOICES OF OUR HEALING COMMUNITY ── */}
 //         <section id="testimonials" className="py-[6rem] md:py-[10rem] px-[clamp(1.5rem,5vw,5rem)] relative z-10 bg-white/80 backdrop-blur-sm overflow-hidden">
 //           <div className="max-w-[90rem] mx-auto relative z-10">
 
@@ -814,7 +781,6 @@
 //                 {/* ── COLUMN 1 ── scrolls up */}
 //                 <div className="community-col absolute left-0 top-0 w-full md:w-1/3 px-3 h-full">
 //                   <div className="community-track flex flex-col gap-3">
-//                     {/* set A */}
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '260px' }}>
 //                       <img src="/community/photos/photo-01.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
@@ -849,27 +815,18 @@
 //                   </div>
 //                 </div>
 
-//                 {/* ── COLUMN 2 ── scrolls down, has videos */}
+//                 {/* ── COLUMN 2 ── scrolls down */}
 //                 <div className="community-col absolute left-0 top-0 w-full md:w-1/3 md:left-1/3 px-3 h-full">
 //                   <div className="community-track flex flex-col gap-3">
-//                     {/* set A */}
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '220px' }}>
 //                       <img src="/community/photos/photo-06.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
-//                     {/* <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0 relative" style={{ height: '260px' }}>
-//                       <video src="/community/videos/video-01.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
-//                       <div className="absolute bottom-2 right-3 bg-black/50 text-white text-[10px] font-mono px-2 py-1 rounded-full pointer-events-none">▶ VIDEO</div>
-//                     </div> */}
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '200px' }}>
 //                       <img src="/community/photos/photo-07.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '240px' }}>
 //                       <img src="/community/photos/photo-08.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
-//                     {/* <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0 relative" style={{ height: '260px' }}>
-//                       <video src="/community/videos/video-02.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
-//                       <div className="absolute bottom-2 right-3 bg-black/50 text-white text-[10px] font-mono px-2 py-1 rounded-full pointer-events-none">▶ VIDEO</div>
-//                     </div> */}
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '200px' }}>
 //                       <img src="/community/photos/photo-09.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
@@ -877,34 +834,27 @@
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '220px' }}>
 //                       <img src="/community/photos/photo-06.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
-
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '200px' }}>
 //                       <img src="/community/photos/photo-07.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '240px' }}>
 //                       <img src="/community/photos/photo-08.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
-
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '200px' }}>
 //                       <img src="/community/photos/photo-09.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
 //                   </div>
 //                 </div>
 
-//                 {/* ── COLUMN 3 ── scrolls up, has video-03 */}
+//                 {/* ── COLUMN 3 ── scrolls up */}
 //                 <div className="community-col absolute left-0 top-0 w-full md:w-1/3 md:left-2/3 px-3 h-full">
 //                   <div className="community-track flex flex-col gap-3">
-//                     {/* set A */}
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '240px' }}>
 //                       <img src="/community/photos/photo-10.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '200px' }}>
 //                       <img src="/community/photos/photo-11.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
-//                     {/* <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0 relative" style={{ height: '260px' }}>
-//                       <video src="/community/videos/video-03.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
-//                       <div className="absolute bottom-2 right-3 bg-black/50 text-white text-[10px] font-mono px-2 py-1 rounded-full pointer-events-none">▶ VIDEO</div>
-//                     </div> */}
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '220px' }}>
 //                       <img src="/community/photos/photo-12.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
@@ -927,10 +877,6 @@
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '200px' }}>
 //                       <img src="/community/photos/photo-11.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
-//                     {/* <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0 relative" style={{ height: '260px' }}>
-//                       <video src="/community/videos/video-03.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
-//                       <div className="absolute bottom-2 right-3 bg-black/50 text-white text-[10px] font-mono px-2 py-1 rounded-full pointer-events-none">▶ VIDEO</div>
-//                     </div> */}
 //                     <div className="rounded-2xl overflow-hidden shadow-md flex-shrink-0" style={{ height: '220px' }}>
 //                       <img src="/community/photos/photo-12.jpg" alt="Healing community" className="w-full h-full object-cover" loading="lazy" />
 //                     </div>
@@ -954,7 +900,7 @@
 
 //             {/* CTA */}
 //             <div className="text-center mt-12 reveal-up" style={{ transitionDelay: '0.4s' }}>
-//               <a href="admissions" className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors">
+//               <a href="#admissions" className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors">
 //                 <span className="w-8 h-px bg-slate-300 group-hover:w-12 group-hover:bg-[#E8573A] transition-all duration-300"></span>
 //                 BOOK YOUR HEALING SESSION
 //                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -965,6 +911,7 @@
 
 //           </div>
 //         </section>
+
 //         {/* Blog Section - Latest Articles */}
 //         <section id="blog" className="py-[6rem] md:py-[10rem] px-[clamp(1.5rem,5vw,5rem)] relative z-10 bg-white/80 backdrop-blur-sm">
 //           <div className="max-w-[90rem] mx-auto">
@@ -1118,43 +1065,6 @@
 //             </div>
 //           </div>
 //         </section>
-//         {/* Final CTA - Now with semi-transparent background */}
-//         {/* <div className="relative z-20 px-[clamp(1.5rem,5vw,5rem)] py-[4rem] md:py-[8rem] bg-white/50 backdrop-blur-sm">
-//           <section className="cta-section relative w-full max-w-[90rem] mx-auto min-h-[60vh] py-20 flex flex-col items-center justify-center overflow-hidden text-center bg-[#06080c] rounded-3xl shadow-[0_20px_40px_-20px_rgba(0,0,0,0.1)]">
-//             <video autoPlay muted loop playsInline className="cta-bg-photo absolute inset-0 z-0 w-full h-[130%] -top-[15%] object-cover" style={{ filter: 'brightness(0.8) contrast(1.1) saturate(1.15)' }}>
-//               <source src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/user-files/ee77abb2-b67d-4ed9-bbf1-155a06f3baad/642c4e57-36d4-4a67-b403-0d13c769b912-1460279_Cockpit_View_1280x720-1-1-.mp4?v=1777486220669" type="video/mp4" />
-//             </video>
-
-//             <div className="absolute inset-0 z-10 bg-[#06080c]/50" />
-//             <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#06080c] via-transparent to-[#06080c] opacity-80" />
-
-//             <div className="relative z-30 w-full max-w-[50rem] mx-auto px-6 flex flex-col items-center">
-//               <h2 className="cta-title font-display font-normal text-[clamp(3rem,7vw,6.5rem)] tracking-tight text-white leading-[0.9] mb-6 flex flex-wrap justify-center gap-x-[1.5vw]">
-//                 <span className="word block">Ready</span>
-//                 <span className="word block">for</span>
-//                 <span className="word block">Takeoff?</span>
-//               </h2>
-
-//               <p className="cta-subtitle font-sans text-[clamp(1.125rem,1.25vw,1.25rem)] font-light text-white/90 max-w-[40ch] mx-auto mb-10 md:mb-12 leading-[1.6]">
-//                 Book a campus tour or schedule a discovery flight. Our admissions
-//                 team responds within 24 hours. Zero obligations.
-//               </p>
-
-//               <div className="cta-button flex flex-col items-center gap-4">
-//                 <a href="#admissions" className="group inline-flex items-center justify-center px-[48px] py-[18px] bg-[#E8573A] text-white text-sm font-medium tracking-widest uppercase rounded-full transition-all duration-300 hover:-translate-y-[3px] hover:bg-[#F06B4E] hover:shadow-[0_0_20px_rgba(240,107,78,0.4)]">
-//                   BOOK A DISCOVERY FLIGHT
-//                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="ml-2 transition-transform group-hover:translate-x-1">
-//                     <path d="M5 12h14" />
-//                     <path d="m12 5 7 7-7 7" />
-//                   </svg>
-//                 </a>
-//                 <a href="tel:8582794359" className="text-white/70 hover:text-white text-sm font-light transition-colors">
-//                   or call (858) 279-4359
-//                 </a>
-//               </div>
-//             </div>
-//           </section>
-//         </div> */}
 //         {/* Final CTA - With Left-Aligned Content & Gradient Overlay */}
 //         <div className="relative z-20 px-[clamp(1.5rem,5vw,5rem)] py-[4rem] md:py-[8rem] bg-white/50 backdrop-blur-sm">
 //           <section className="cta-section relative w-full max-w-[90rem] mx-auto min-h-[55vh] flex flex-col md:flex-row items-center justify-between overflow-hidden rounded-3xl shadow-2xl">
@@ -1182,7 +1092,7 @@
 //                 </span>
 //               </div>
 
-//               {/* Main Heading with Split Text Effect */}
+//               {/* Main Heading */}
 //               <h2 className="font-display font-normal text-[clamp(2.5rem,5vw,5.5rem)] tracking-tight text-white leading-[1.05] mb-6">
 //                 Ready to
 //                 <span className="relative inline-block ml-2 md:ml-4">
@@ -1193,13 +1103,12 @@
 //                 </span>
 //               </h2>
 
-//               {/* Description with better readability */}
 //               <p className="font-sans text-[clamp(1rem,1.25vw,1.125rem)] font-light text-white/90 max-w-[45ch] mb-8 md:mb-10 leading-relaxed">
 //                 Book a free consultation or schedule your first session. Our team
 //                 responds within 24 hours. Completely confidential, zero obligations.
 //               </p>
 
-//               {/* CTA Buttons with hover effects */}
+//               {/* CTA Buttons */}
 //               <div className="flex flex-col sm:flex-row items-start gap-5">
 //                 <a
 //                   href="#admissions"
@@ -1212,7 +1121,6 @@
 //                       <path d="m12 5 7 7-7 7" />
 //                     </svg>
 //                   </span>
-//                   {/* Shine effect on hover */}
 //                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 //                 </a>
 
@@ -1254,21 +1162,21 @@
 //               </div>
 //             </div>
 
-//             {/* Empty spacer for right side - maintains left alignment */}
+//             {/* Empty spacer for right side */}
 //             <div className="hidden lg:block flex-1" />
 
 //           </section>
 //         </div>
 
-//         {/* Footer - With semi-transparent background */}
+//         {/* Footer */}
 //         <footer className="bg-white/80 backdrop-blur-sm border-t border-slate-200 relative pb-8 pt-16 md:pt-20 z-30">
 //           <div className="max-w-[90rem] mx-auto px-[clamp(1.5rem,5vw,5rem)] flex flex-col lg:flex-row justify-between gap-12 lg:gap-16 border-b border-slate-200 pb-12 lg:pb-16">
 //             <div className="flex flex-col justify-between max-w-xs">
-//               <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/7779c4e9-cf43-4379-a162-96455d9c5618_320w.png" alt="Serenity Counselling Logo" className="md:w-40 w-32 h-auto object-contain mb-8" />
+//               <img src="/neuro-nest-logo.png" alt="Neuro Nest Counseling Center Logo" className="md:w-40 w-32 h-auto object-contain mb-8" />
 //               <div className="font-mono text-xs font-light text-slate-500 leading-[1.8] tracking-widest">
-//                 SERENITY COUNSELLING
+//                 NEURO NEST COUNSELING CENTER
 //                 <br />
-//                 LICENSED & ACCREDITED THERAPISTS
+//                 RCI REGISTERED PSYCHOLOGIST
 //                 <br />
 //                 BACP REGISTERED • GDPR COMPLIANT
 //               </div>
@@ -1280,9 +1188,9 @@
 //                   Services
 //                 </h5>
 //                 <ul className="flex flex-col gap-4 font-mono text-sm font-light text-slate-500">
-//                   <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Individual Therapy</a></li>
-//                   <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Couples Counselling</a></li>
-//                   <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Family Therapy</a></li>
+//                   <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Remedial Therapy</a></li>
+//                   <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">ABA Therapy</a></li>
+//                   <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Behaviour Therapy</a></li>
 //                 </ul>
 //               </div>
 //               <div>
@@ -1291,12 +1199,7 @@
 //                 </h5>
 //                 <ul className="flex flex-col gap-4 font-mono text-sm font-light text-slate-500">
 //                   <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Our Approach</a></li>
-//                   <li>
-//                     <a href="#" className="hover:text-[#F06B4E] transition-colors flex items-center gap-2">
-//                       Careers
-//                       <span className="bg-[#E8573A] text-white px-1.5 py-0.5 text-[0.6rem] font-normal rounded-sm">HIRING</span>
-//                     </a>
-//                   </li>
+//                   <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">About Rama Amte</a></li>
 //                   <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Press Room</a></li>
 //                 </ul>
 //               </div>
@@ -1320,7 +1223,7 @@
 
 //           <div className="w-full flex justify-center mt-6 md:mt-8">
 //             <span className="font-mono text-xs font-light text-slate-400 tracking-widest uppercase text-center px-4">
-//               © 2024 SERENITY COUNSELLING. ALL RIGHTS RESERVED.
+//               © 2024 NEURO NEST COUNSELING CENTER. ALL RIGHTS RESERVED.
 //             </span>
 //           </div>
 //         </footer>
@@ -1416,8 +1319,6 @@
 // }
 
 
-
-
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
@@ -1428,6 +1329,16 @@ import Navbar from '@/components/Navbar';
 export default function Home() {
   // State for countdown
   const [countdown, setCountdown] = useState({ hours: 18, minutes: 4, seconds: 22 });
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  // Function to open the lead popup
+  const openLeadPopup = (e: React.MouseEvent) => {
+    e.preventDefault();
+    // Find the LeadPopup component and trigger its open state
+    const popupEvent = new CustomEvent('openLeadPopup');
+    window.dispatchEvent(popupEvent);
+    setIsPopupOpen(true);
+  };
 
   // Force animation play state after mount — fixes SSR hydration killing initial scroll
   useEffect(() => {
@@ -1680,13 +1591,13 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full sm:w-auto reveal-up is-visible" style={{ transitionDelay: '1.4s' }}>
-                <a href="#admissions" className="codepen-button w-full sm:w-auto">
+                <button onClick={openLeadPopup} className="codepen-button w-full sm:w-auto cursor-pointer">
                   <span className="px-8 py-4 text-sm font-mono tracking-widest flex items-center gap-2">
                     BOOK A FREE CONSULTATION
                     {/* @ts-expect-error - web component */}
                     <iconify-icon icon="solar:heart-linear" className="w-5 h-5" />
                   </span>
-                </a>
+                </button>
                 <a href="#services" className="group flex items-center justify-center gap-3 h-14 px-6 text-xs text-slate-500 hover:text-slate-900 font-mono font-light tracking-widest transition-colors w-full sm:w-auto">
                   <div className="w-8 h-[1px] bg-slate-300 group-hover:w-12 group-hover:bg-slate-900 transition-all duration-300" />
                   EXPLORE SERVICES
@@ -1780,11 +1691,11 @@ export default function Home() {
                       <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Reading & Writing</span>
                       <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Attention & Concentration</span>
                     </div>
-                    <a href="#" className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors">
+                    <button onClick={openLeadPopup} className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors cursor-pointer">
                       LEARN MORE
                       {/* @ts-expect-error - web component */}
                       <iconify-icon icon="solar:arrow-right-linear" className="w-4 h-4" />
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1812,11 +1723,11 @@ export default function Home() {
                       <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Autism Spectrum</span>
                       <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Developmental Delays</span>
                     </div>
-                    <a href="#" className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors">
+                    <button onClick={openLeadPopup} className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors cursor-pointer">
                       LEARN MORE
                       {/* @ts-expect-error - web component */}
                       <iconify-icon icon="solar:arrow-right-linear" className="w-4 h-4" />
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1843,11 +1754,11 @@ export default function Home() {
                     <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">ADHD</span>
                     <span className="text-[10px] font-mono bg-[#E8573A]/10 px-2 py-1 rounded-full text-[#E8573A]">Emotional Regulation</span>
                   </div>
-                  <a href="#" className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors pointer-events-auto">
+                  <button onClick={openLeadPopup} className="inline-flex items-center gap-2 font-mono text-xs font-light text-[#E8573A] hover:text-[#F06B4E] transition-colors pointer-events-auto cursor-pointer">
                     LEARN MORE
                     {/* @ts-expect-error - web component */}
                     <iconify-icon icon="solar:arrow-right-linear" className="w-4 h-4" />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1989,13 +1900,13 @@ export default function Home() {
 
             {/* Bottom CTA Link */}
             <div className="text-center mt-12 reveal-up" style={{ transitionDelay: '0.4s' }}>
-              <a href="#admissions" className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors">
+              <button onClick={openLeadPopup} className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors cursor-pointer">
                 <span className="w-8 h-px bg-slate-300 group-hover:w-12 group-hover:bg-[#E8573A] transition-all duration-300" />
                 START YOUR HEALING TODAY
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
         </section>
@@ -2137,13 +2048,13 @@ export default function Home() {
 
             {/* Bottom CTA Link */}
             <div className="text-center mt-12 reveal-up" style={{ transitionDelay: '0.4s' }}>
-              <a href="#contact" className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors">
+              <button onClick={openLeadPopup} className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors cursor-pointer">
                 <span className="w-8 h-px bg-slate-300 group-hover:w-12 group-hover:bg-[#E8573A] transition-all duration-300" />
                 BOOK YOUR HEALING SESSION
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
         </section>
@@ -2319,13 +2230,13 @@ export default function Home() {
 
             {/* CTA */}
             <div className="text-center mt-12 reveal-up" style={{ transitionDelay: '0.4s' }}>
-              <a href="#admissions" className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors">
+              <button onClick={openLeadPopup} className="group inline-flex items-center gap-3 text-sm font-mono tracking-wider text-slate-600 hover:text-[#E8573A] transition-colors cursor-pointer">
                 <span className="w-8 h-px bg-slate-300 group-hover:w-12 group-hover:bg-[#E8573A] transition-all duration-300"></span>
                 BOOK YOUR HEALING SESSION
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+              </button>
             </div>
 
           </div>
@@ -2385,12 +2296,12 @@ export default function Home() {
                       Anxiety is more than just worry. Learn how to recognise the signs,
                       understand your triggers, and take the first steps toward relief.
                     </p>
-                    <div className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300">
+                    <button onClick={openLeadPopup} className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300 cursor-pointer">
                       READ MORE
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </a>
@@ -2423,12 +2334,12 @@ export default function Home() {
                       Many couples wait until a breaking point to seek help. Here's why
                       starting sooner — or even now — can transform your relationship.
                     </p>
-                    <div className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300">
+                    <button onClick={openLeadPopup} className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300 cursor-pointer">
                       READ MORE
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </a>
@@ -2461,12 +2372,12 @@ export default function Home() {
                       Small daily habits can make a profound difference. Discover five
                       evidence-based mindfulness practices recommended by our therapists.
                     </p>
-                    <div className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300">
+                    <button onClick={openLeadPopup} className="flex items-center gap-2 text-sm font-mono text-[#E8573A] group-hover:gap-3 transition-all duration-300 cursor-pointer">
                       READ MORE
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </a>
@@ -2484,6 +2395,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         {/* Final CTA - With Left-Aligned Content & Gradient Overlay */}
         <div className="relative z-20 px-[clamp(1.5rem,5vw,5rem)] py-[4rem] md:py-[8rem] bg-white/50 backdrop-blur-sm">
           <section className="cta-section relative w-full max-w-[90rem] mx-auto min-h-[55vh] flex flex-col md:flex-row items-center justify-between overflow-hidden rounded-3xl shadow-2xl">
@@ -2529,9 +2441,9 @@ export default function Home() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row items-start gap-5">
-                <a
-                  href="#admissions"
-                  className="group relative inline-flex items-center justify-center px-8 py-4 bg-[#E8573A] text-white text-sm font-medium tracking-widest uppercase rounded-full transition-all duration-300 hover:-translate-y-[2px] hover:bg-[#F06B4E] hover:shadow-[0_0_30px_rgba(232,87,58,0.4)] overflow-hidden"
+                <button
+                  onClick={openLeadPopup}
+                  className="group relative inline-flex items-center justify-center px-8 py-4 bg-[#E8573A] text-white text-sm font-medium tracking-widest uppercase rounded-full transition-all duration-300 hover:-translate-y-[2px] hover:bg-[#F06B4E] hover:shadow-[0_0_30px_rgba(232,87,58,0.4)] overflow-hidden cursor-pointer"
                 >
                   <span className="relative z-10 flex items-center">
                     BOOK A FREE CONSULTATION
@@ -2541,7 +2453,7 @@ export default function Home() {
                     </svg>
                   </span>
                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-                </a>
+                </button>
 
                 <a
                   href="tel:+441234567890"
@@ -2591,7 +2503,7 @@ export default function Home() {
         <footer className="bg-white/80 backdrop-blur-sm border-t border-slate-200 relative pb-8 pt-16 md:pt-20 z-30">
           <div className="max-w-[90rem] mx-auto px-[clamp(1.5rem,5vw,5rem)] flex flex-col lg:flex-row justify-between gap-12 lg:gap-16 border-b border-slate-200 pb-12 lg:pb-16">
             <div className="flex flex-col justify-between max-w-xs">
-              <img src="/neuro-nest-logo.png" alt="Neuro Nest Counseling Center Logo" className="md:w-40 w-32 h-auto object-contain mb-8" />
+              <img src="/logo.png" alt="Neuro Nest Counseling Center Logo" className="md:w-40 w-32 h-auto object-contain mb-8" />
               <div className="font-mono text-xs font-light text-slate-500 leading-[1.8] tracking-widest">
                 NEURO NEST COUNSELING CENTER
                 <br />
@@ -2607,9 +2519,9 @@ export default function Home() {
                   Services
                 </h5>
                 <ul className="flex flex-col gap-4 font-mono text-sm font-light text-slate-500">
-                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Remedial Therapy</a></li>
-                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">ABA Therapy</a></li>
-                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Behaviour Therapy</a></li>
+                  <li><button onClick={openLeadPopup} className="hover:text-[#F06B4E] transition-colors block cursor-pointer">Remedial Therapy</button></li>
+                  <li><button onClick={openLeadPopup} className="hover:text-[#F06B4E] transition-colors block cursor-pointer">ABA Therapy</button></li>
+                  <li><button onClick={openLeadPopup} className="hover:text-[#F06B4E] transition-colors block cursor-pointer">Behaviour Therapy</button></li>
                 </ul>
               </div>
               <div>
@@ -2617,8 +2529,8 @@ export default function Home() {
                   Practice
                 </h5>
                 <ul className="flex flex-col gap-4 font-mono text-sm font-light text-slate-500">
-                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Our Approach</a></li>
-                  <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">About Rama Amte</a></li>
+                  <li><a href="#about" className="hover:text-[#F06B4E] transition-colors block">Our Approach</a></li>
+                  <li><a href="#about" className="hover:text-[#F06B4E] transition-colors block">About Rama Amte</a></li>
                   <li><a href="#" className="hover:text-[#F06B4E] transition-colors block">Press Room</a></li>
                 </ul>
               </div>
