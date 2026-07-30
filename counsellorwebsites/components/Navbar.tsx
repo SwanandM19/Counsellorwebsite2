@@ -44,7 +44,7 @@ export default function Navbar() {
   }, [isMenuOpen])
 
   const navLinks = [
-    { href: '#architecture', label: 'Services' },
+    { href: '#services', label: 'Services' },
     { href: '#about', label: 'About' },
     { href: '#admissions', label: 'Booking' },
   ]
